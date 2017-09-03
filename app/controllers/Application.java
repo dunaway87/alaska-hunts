@@ -6,6 +6,7 @@ import play.mvc.*;
 import java.util.*;
 
 import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 
 import api.filters.Filters;
 import models.*;
@@ -17,11 +18,11 @@ public class Application extends Controller {
     }
 
     public static void getFilters(){
-		JsonArray filters = Filters.getFilters();
+		JsonObject filters = Filters.getFilters();
 		
 		
 		
-		renderJSON(filters);
+		renderJSON(filters.toString());
 	}
 
     
