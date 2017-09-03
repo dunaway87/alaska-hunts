@@ -1,0 +1,16 @@
+15:04:08,488 INFO  ~ Starting /home/jordan/projects/alaska-hunts
+15:04:08,973 WARN  ~ You're running Play! in DEV mode
+15:04:09,058 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+15:04:25,773 INFO  ~ Application 'alaska-hunts' is now started !
+15:04:25,813 INFO  ~ initView route: 
+15:04:53,097 INFO  ~ initView route: 
+15:19:53,152 INFO  ~ initView route: 
+15:19:53,621 INFO  ~ Example.getFilters
+15:20:05,442 INFO  ~ Example.saveArtist: Jordan Jenckes
+17:59:47,320 INFO  ~ Starting /home/jordan/projects/alaska-hunts
+17:59:47,725 WARN  ~ You're running Play! in DEV mode
+17:59:47,776 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+18:00:18,680 INFO  ~ Application 'alaska-hunts' is now started !
+18:00:18,750 INFO  ~ initView route: example
+18:00:20,029 INFO  ~ Example.getFilters
+18:00:32,535 INFO  ~ Example.saveArtist: Jordan Jenckes

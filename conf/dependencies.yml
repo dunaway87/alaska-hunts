@@ -1,0 +1,6 @@
+# Application dependencies
+
+require:
+    - play
+    - org.postgresql -> postgresql 9.4.1212.jre7:
+        force: true

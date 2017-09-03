@@ -1,0 +1,76 @@
+/* 
+ the .examples class was set in ExampleView.js
+ and is automatically applied to the view's container div.
+ */
+div.examples {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* control menu */
+div.examples h1 {
+  color: #636363;
+}
+div.examples div.controls {
+  padding: 5px;
+  border-bottom: dotted 1px #888;
+}
+div.examples div.controls span.label {
+  margin-right: 1em;
+  position: relative;
+  top: 2px;
+}
+div.examples div.controls i.create {
+  float: right;
+  opacity: 0.6;
+  cursor: pointer;
+}
+div.examples div.controls i.create:hover {
+  opacity: 0.8;
+}
+/* example list */
+div.examples ul.example-list {
+  margin-top: 1em;
+  padding: 0;
+  list-style: none;
+}
+div.examples ul.example-list li {
+  margin: 10px 0px;
+}
+div.examples ul.example-list li a {
+  text-decoration: none;
+  color: #000;
+}
+div.examples ul.example-list li a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+}
+html,
+body {
+  height: 100%;
+}
+#header {
+  background: linear-gradient(to bottom, #272727 1%, #333 100%);
+  box-shadow: 0px 0px 2px 0 #000;
+  height: 38px;
+}
+#header #logo {
+  height: 30px;
+  padding: 4px;
+  position: absolute;
+  top: 2px;
+  left: 15px;
+  color: rgba(255,248,248,0.9);
+  text-decoration: none;
+  font-size: 1.5em;
+}
+#main,
+h1 {
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
