@@ -8,6 +8,7 @@ import play.Logger;
 import utils.DatabaseUtils;
 import api.filters.types.Rates;
 import api.filters.types.Residency;
+import api.filters.types.Season;
 import api.filters.types.Species;
 import api.filters.types.Unit;
 
@@ -29,7 +30,7 @@ public class Filters {
 			array.add("drawrate",Rates.getDrawRateFilter(conn));
 			array.add("successrate",Rates.getHuntSuccessRatefilter(conn));
 			array.add("residence",Residency.getFilter(conn));
-
+			array.add("season", Season.getFilter());
 
 			conn.close();
 		} catch (SQLException e) {
