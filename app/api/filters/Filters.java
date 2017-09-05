@@ -25,7 +25,6 @@ public class Filters {
 		try {
 			array.add("species",Species.getFilter(conn));			
 			array.add("unit",Unit.getUnitFilter(conn)); 
-			array.add("subunit",Unit.getSubunitFilter(conn));	
 
 			array.add("drawrate",Rates.getDrawRateFilter(conn));
 			array.add("successrate",Rates.getHuntSuccessRatefilter(conn));
