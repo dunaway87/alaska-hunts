@@ -18,7 +18,7 @@ public class Application extends Controller {
     }
 
     public static void getFilters(){
-		JsonObject filters = Filters.getFilters();
+		JsonArray filters = Filters.getFilters();
 		
 		
 		

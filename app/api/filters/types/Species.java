@@ -1,5 +1,6 @@
 package api.filters.types;
 
+import java.sql.Array;
 import java.sql.Connection;
 import java.sql.ResultSet;
 
@@ -16,7 +17,7 @@ import com.google.gson.JsonObject;
 public class Species extends GenericFilter{
 	
 	public static class SQL {
-		public static String GET_SPECIES = "SELECT DISTINCT species, id FROM hunt.species ORDER BY id ASC";
+		public static String GET_SPECIES = "SELECT DISTINCT s.species, s.id, array_agg(la.id),array_agg(legal_animal)  FROM hunt.species s JOIN hunt.legal_animal la on s.id = species_id GROUP BY s.species, s.id ORDER BY id ASC ";
 	}
 	
 	
@@ -32,6 +33,26 @@ public class Species extends GenericFilter{
 				JsonObject item = new JsonObject();
 				item.addProperty("label", WordUtils.capitalize(rs.getString(1)));
 				item.addProperty("value", rs.getInt(2));
+				
+				JsonObject subFilter = new JsonObject();
+				JsonArray subRange = new JsonArray();
+				Array legalIdArray = rs.getArray(3);
+				Array legalArray = rs.getArray(4);
+				
+				ResultSet laIdRS = legalIdArray.getResultSet();
+				ResultSet laRS = legalArray.getResultSet();
+				while(laIdRS.next()){
+					laRS.next();
+					JsonObject subItem = new JsonObject();
+					subItem.addProperty("label", laRS.getString(2));
+					subItem.addProperty("value", laIdRS.getInt(2));
+					subRange.add(subItem);
+					
+				}
+				subFilter.addProperty("Label", "Legal Animal");
+				subFilter.add("range", subRange);
+				item.add("subfilter", subFilter);
+				
 				range.add(item);
 			}
 			
@@ -45,8 +66,6 @@ public class Species extends GenericFilter{
 
 		return filter;
 	}
-	
-	
 	
 	
 	

@@ -1,12 +1,12 @@
-var ExampleRouter = require('routers/ExampleRouter');
-var ExampleRoutes = require('routes/ExampleRoutes');
+var HuntsRouter = require('routers/HuntsRouter');
+var HuntsRoutes = require('routes/HuntsRoutes');
 
 (function ($) {
 	Backbone.emulateJSON = true;
 	Backbone.emulateHTTP = true;
 
 	app = {
-		title: 'Example Application - alaska-hunts',
+		title: 'Alaska Hunts',
 		events: Backbone.Radio.channel('global'),
 		routers: {},
 
@@ -21,8 +21,7 @@ var ExampleRoutes = require('routes/ExampleRoutes');
 
 			// Add a region
 			m.addRegions({
-				header: "#header-nav",
-				sidebar: "#sidebar-nav",
+
 				main: "#main"
 			});
 /*
@@ -35,7 +34,7 @@ var ExampleRoutes = require('routes/ExampleRoutes');
 
 			var that = this;
 
-			this.routers.example = new ExampleRouter();
+			this.routers.hunts = new HuntsRouter();
 
 			var history = [];
 			Backbone.history.on("route", function (name, args) {
@@ -54,9 +53,9 @@ var ExampleRoutes = require('routes/ExampleRoutes');
 				pushState: Modernizr.history
 			});
 			
-			app.router = app.routers.example;
+			app.router = app.routers.hunts;
 
-			app.router.navigate(ExampleRoutes.example(), true);
+			app.router.navigate(HuntsRoutes.drawHunts(), true);
 		}
 	};
 

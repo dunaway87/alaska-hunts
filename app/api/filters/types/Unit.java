@@ -14,7 +14,7 @@ import com.google.gson.JsonObject;
 
 public class Unit {
 	public static class SQL {
-		public static String GET_UNIT = "SELECT DISTINCT unit FROM hunt.unit ORDER BY unit ASC";
+		public static String GET_UNIT = "SELECT DISTINCT unit FROM hunt.draw_hunt ORDER BY unit ASC";
 		public static String GET_SUBUNIT = "SELECT DISTINCT subunit,id FROM hunt.subunit ORDER BY subunit ASC";
 	}
 	

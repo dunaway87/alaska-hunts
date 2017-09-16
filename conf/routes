@@ -4,19 +4,21 @@
 
 # Home page
 GET     /                                       Blank.index
-GET     /example                                Blank.index
+GET     /drawHunts                                Blank.index
 GET		/example/artist/{id}					Blank.index
 
 #api routes are not visible to users, e.g. ajax requests
 GET     /filters								Application.getFilters
 
+GET 	/api/hunts/filters						Application.getFilters
 
-GET		/api/example/filters                    Example.getFilters
-GET		/api/example/artists                    Example.getArtists
 
-POST	/api/example/artist/?                   Example.saveArtist
-POST	/api/example/artist/{id}                Example.updateArtist
-DELETE	/api/example/artist                    	Example.removeArtist
+#GET		/api/example/filters                    Example.getFilters
+#GET		/api/example/artists                    Example.getArtists
+
+#POST	/api/example/artist/?                   Example.saveArtist
+#POST	/api/example/artist/{id}                Example.updateArtist
+#DELETE	/api/example/artist                    	Example.removeArtist
 
 
 # Ignore favicon requests

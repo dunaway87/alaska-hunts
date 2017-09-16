@@ -1,3 +1,30 @@
+#map {
+  height: 100%;
+  width: 100%;
+}
+#map-exif {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+}
+#sidebar-container {
+  background: #e0e0e0;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 20%;
+}
+#species-container {
+  position: absolute;
+}
+select2-dropdown.select2-dropdown--below {
+  width: 250px !important;
+}
+.select2-container--default .select2-selection--single {
+  width: 250px;
+  position: relative;
+}
+
 /* 
  the .examples class was set in ExampleView.js
  and is automatically applied to the view's container div.

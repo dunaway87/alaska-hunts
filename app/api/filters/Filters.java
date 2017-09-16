@@ -17,18 +17,18 @@ import com.google.gson.JsonObject;
 
 public class Filters {
 
-	public static JsonObject getFilters() {
+	public static JsonArray getFilters() {
 		Connection conn = new DatabaseUtils().getConnection();
-		JsonObject array = new JsonObject();
+		JsonArray array = new JsonArray();
 
 		try {
-			array.add("species",Species.getFilter(conn));			
-			array.add("unit",Unit.getUnitFilter(conn)); 
-			array.add("subunit",Unit.getSubunitFilter(conn));	
+			array.add(Species.getFilter(conn));			
+			array.add(Unit.getUnitFilter(conn)); 
+			array.add(Unit.getSubunitFilter(conn));	
 
-			array.add("drawrate",Rates.getDrawRateFilter(conn));
-			array.add("successrate",Rates.getHuntSuccessRatefilter(conn));
-			array.add("residence",Residency.getFilter(conn));
+			//array.add(Rates.getDrawRateFilter(conn));
+			//array.add(Rates.getHuntSuccessRatefilter(conn));
+			array.add(Residency.getFilter(conn));
 
 
 			conn.close();
@@ -37,7 +37,6 @@ public class Filters {
 		}
 		return array;
 	}
-
 
 
 }
