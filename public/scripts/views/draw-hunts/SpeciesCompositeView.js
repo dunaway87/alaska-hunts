@@ -10,7 +10,7 @@ module.exports = Backbone.Marionette.CompositeView.extend({
 	tagName: "select",
 
 	events:{
-		"change": "getSpecies"
+		"change": "onSpeciesChange"
 	},
 
 	onShow: function(){
@@ -30,14 +30,16 @@ module.exports = Backbone.Marionette.CompositeView.extend({
 
 	},
 
-	getSpecies: function(){
+	onSpeciesChange: function(){
 		 var model = this.collection.at($(':selected', this.$el).index());
+
 		 log.debug("species model %o: ", model)
 		 this.trigger("species:filter", model);
 	},
 
 	initialize:function(options){
 		this.option = options
+		
 		
 	}
 

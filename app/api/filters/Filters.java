@@ -23,13 +23,13 @@ public class Filters {
 
 		try {
 			array.add(Species.getFilter(conn));			
-			array.add(Unit.getUnitFilter(conn)); 
+			/*array.add(Unit.getUnitFilter(conn)); 
 			array.add(Unit.getSubunitFilter(conn));	
 
-			//array.add(Rates.getDrawRateFilter(conn));
-			//array.add(Rates.getHuntSuccessRatefilter(conn));
+			array.add(Rates.getDrawRateFilter(conn));
+			array.add(Rates.getHuntSuccessRatefilter(conn));
 			array.add(Residency.getFilter(conn));
-
+*/
 
 			conn.close();
 		} catch (SQLException e) {

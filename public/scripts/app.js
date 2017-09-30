@@ -1,5 +1,6 @@
 var HuntsRouter = require('routers/HuntsRouter');
 var HuntsRoutes = require('routes/HuntsRoutes');
+var MapView = require('views/draw-hunts/MapView.js');
 
 (function ($) {
 	Backbone.emulateJSON = true;
@@ -22,9 +23,15 @@ var HuntsRoutes = require('routes/HuntsRoutes');
 			// Add a region
 			m.addRegions({
 
-				main: "#main"
+				main: "#main",
+				
+
 			});
-/*
+			
+
+		
+/*			
+			
 			m.getRegion('header').attachView(new HeaderView());
 			m.getRegion('sidebar').attachView(new SidebarView());
 */

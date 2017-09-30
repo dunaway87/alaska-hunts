@@ -6279,3 +6279,585 @@ org.postgresql.util.PSQLException: ERROR: schema "draw_hunt" does not exist
 14:32:23,594 INFO  ~ initView route: drawHunts
 14:32:44,945 INFO  ~ initView route: drawHunts
 14:33:25,644 INFO  ~ initView route: drawHunts
+15:44:10,043 INFO  ~ initView route: drawHunts
+15:47:05,368 INFO  ~ initView route: drawHunts
+15:48:50,408 INFO  ~ initView route: drawHunts
+15:53:01,844 INFO  ~ initView route: drawHunts
+15:53:19,292 INFO  ~ initView route: drawHunts
+15:55:31,540 INFO  ~ initView route: drawHunts
+15:55:51,839 INFO  ~ initView route: drawHunts
+16:01:57,601 INFO  ~ initView route: drawHunts
+16:02:49,133 INFO  ~ initView route: drawHunts
+16:03:04,877 INFO  ~ initView route: drawHunts
+16:03:07,837 INFO  ~ initView route: drawHunts
+16:31:19,203 INFO  ~ initView route: drawHunts
+21:58:42,780 INFO  ~ initView route: drawHunts
+22:02:14,089 INFO  ~ initView route: drawHunts
+22:02:16,192 INFO  ~ initView route: drawHunts
+22:12:19,337 INFO  ~ initView route: drawHunts
+22:13:45,218 INFO  ~ initView route: drawHunts
+22:14:22,433 INFO  ~ initView route: drawHunts
+22:14:27,611 INFO  ~ initView route: drawHunts
+22:14:47,318 INFO  ~ initView route: drawHunts
+22:16:28,855 INFO  ~ initView route: drawHunts
+22:17:17,576 INFO  ~ initView route: drawHunts
+22:19:19,318 INFO  ~ initView route: drawHunts
+22:19:34,284 INFO  ~ initView route: drawHunts
+22:20:19,976 INFO  ~ initView route: drawHunts
+22:20:51,016 INFO  ~ initView route: drawHunts
+22:21:17,492 INFO  ~ initView route: drawHunts
+08:22:26,938 INFO  ~ initView route: drawHunts
+18:50:38,120 INFO  ~ Starting /home/jordan/projects/alaska-hunts
+18:50:38,599 WARN  ~ You're running Play! in DEV mode
+18:50:38,679 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+18:58:25,503 INFO  ~ Application 'alaska-hunts' is now started !
+18:58:25,594 INFO  ~ initView route: drawHunts
+18:59:22,759 INFO  ~ initView route: drawHunts
+19:01:00,481 INFO  ~ initView route: drawHunts
+19:02:17,976 INFO  ~ initView route: drawHunts
+19:02:39,546 INFO  ~ initView route: drawHunts
+19:06:21,989 INFO  ~ initView route: drawHunts
+19:07:18,558 INFO  ~ initView route: drawHunts
+20:13:56,518 INFO  ~ initView route: drawHunts
+20:14:44,091 INFO  ~ initView route: drawHunts
+20:14:54,138 INFO  ~ initView route: drawHunts
+20:15:15,756 INFO  ~ initView route: drawHunts
+20:15:47,018 INFO  ~ initView route: drawHunts
+20:18:58,815 INFO  ~ initView route: drawHunts
+20:19:33,084 INFO  ~ initView route: drawHunts
+20:19:48,815 INFO  ~ initView route: drawHunts
+20:19:53,190 INFO  ~ initView route: drawHunts
+21:53:08,788 INFO  ~ initView route: drawHunts
+21:54:51,578 INFO  ~ initView route: drawHunts
+21:55:45,907 INFO  ~ initView route: drawHunts
+21:55:50,997 INFO  ~ initView route: drawHunts
+21:56:09,112 INFO  ~ initView route: drawHunts
+22:02:54,685 INFO  ~ initView route: drawHunts
+22:04:02,235 INFO  ~ initView route: drawHunts
+22:05:01,289 INFO  ~ initView route: drawHunts
+22:06:28,767 INFO  ~ initView route: drawHunts
+22:07:11,460 INFO  ~ initView route: drawHunts
+22:07:48,244 INFO  ~ initView route: drawHunts
+22:08:48,228 INFO  ~ initView route: drawHunts
+22:10:39,105 INFO  ~ initView route: drawHunts
+13:43:38,869 INFO  ~ Starting /home/jordan/projects/alaska-hunts
+13:43:39,291 WARN  ~ You're running Play! in DEV mode
+13:43:39,346 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+13:44:26,171 INFO  ~ Application 'alaska-hunts' is now started !
+13:44:29,549 INFO  ~ initView route: drawHunts
+13:45:01,053 INFO  ~ initView route: drawHunts
+13:46:26,686 INFO  ~ initView route: drawHunts
+13:46:56,174 INFO  ~ initView route: drawHunts
+23:30:16,880 INFO  ~ initView route: drawHunts
+08:27:44,346 INFO  ~ initView route: drawHunts
+08:29:13,018 INFO  ~ initView route: drawHunts
+08:29:21,327 INFO  ~ initView route: drawHunts
+08:29:29,499 INFO  ~ initView route: drawHunts
+08:49:33,720 INFO  ~ initView route: drawHunts
+08:49:43,819 INFO  ~ initView route: drawHunts
+08:50:10,901 INFO  ~ initView route: drawHunts
+08:50:24,827 INFO  ~ initView route: drawHunts
+08:51:14,957 INFO  ~ initView route: drawHunts
+08:51:57,198 INFO  ~ initView route: drawHunts
+08:55:38,072 INFO  ~ initView route: drawHunts
+08:56:30,749 INFO  ~ initView route: drawHunts
+08:57:04,259 INFO  ~ initView route: drawHunts
+08:57:17,858 INFO  ~ initView route: drawHunts
+08:58:12,038 INFO  ~ initView route: drawHunts
+08:58:24,258 INFO  ~ initView route: drawHunts
+08:58:42,324 INFO  ~ initView route: drawHunts
+08:59:13,789 INFO  ~ initView route: drawHunts
+08:59:37,314 INFO  ~ initView route: drawHunts
+09:01:17,924 INFO  ~ initView route: drawHunts
+09:02:39,235 INFO  ~ initView route: drawHunts
+09:03:33,960 INFO  ~ initView route: drawHunts
+09:20:44,970 INFO  ~ initView route: drawHunts
+09:21:08,725 INFO  ~ initView route: drawHunts
+09:22:32,920 INFO  ~ initView route: drawHunts
+09:25:09,418 INFO  ~ initView route: drawHunts
+09:26:09,207 INFO  ~ initView route: drawHunts
+09:26:46,974 INFO  ~ initView route: drawHunts
+09:27:34,561 INFO  ~ initView route: drawHunts
+09:28:00,467 INFO  ~ initView route: drawHunts
+09:30:06,942 INFO  ~ initView route: drawHunts
+09:37:05,407 INFO  ~ Starting /home/jordan/projects/alaska-hunts
+09:37:05,807 WARN  ~ You're running Play! in DEV mode
+09:37:05,862 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+09:37:12,300 INFO  ~ Application 'alaska-hunts' is now started !
+09:37:12,362 INFO  ~ initView route: drawHunts
+09:53:44,842 INFO  ~ initView route: drawHunts
+09:53:50,483 INFO  ~ initView route: drawHunts
+09:55:30,876 INFO  ~ initView route: drawHunts
+09:56:43,065 INFO  ~ initView route: drawHunts
+09:57:12,847 INFO  ~ initView route: drawHunts
+09:57:34,911 INFO  ~ initView route: drawHunts
+09:59:22,732 INFO  ~ initView route: drawHunts
+09:59:40,314 INFO  ~ initView route: drawHunts
+09:59:51,759 INFO  ~ initView route: drawHunts
+10:00:06,845 INFO  ~ initView route: drawHunts
+10:00:16,693 INFO  ~ initView route: drawHunts
+10:00:21,256 INFO  ~ initView route: drawHunts
+10:00:38,532 INFO  ~ initView route: drawHunts
+10:00:45,713 INFO  ~ initView route: drawHunts
+10:01:42,788 INFO  ~ initView route: drawHunts
+10:02:02,546 INFO  ~ initView route: drawHunts
+10:02:56,103 INFO  ~ initView route: drawHunts
+10:03:10,667 INFO  ~ initView route: drawHunts
+10:03:44,255 INFO  ~ initView route: drawHunts
+11:10:48,179 INFO  ~ initView route: drawHunts
+11:17:45,588 INFO  ~ initView route: drawHunts
+11:18:31,097 INFO  ~ initView route: drawHunts
+11:20:17,420 INFO  ~ initView route: drawHunts
+11:20:32,899 INFO  ~ initView route: drawHunts
+11:22:08,477 INFO  ~ initView route: drawHunts
+11:22:49,282 INFO  ~ initView route: drawHunts
+11:25:24,859 INFO  ~ initView route: drawHunts
+11:25:50,165 INFO  ~ initView route: drawHunts
+11:26:03,257 INFO  ~ initView route: drawHunts
+11:26:43,458 INFO  ~ initView route: drawHunts
+11:27:02,827 INFO  ~ initView route: drawHunts
+11:27:53,913 INFO  ~ initView route: drawHunts
+11:28:42,575 INFO  ~ initView route: drawHunts
+11:29:36,745 INFO  ~ initView route: drawHunts
+11:29:44,005 INFO  ~ initView route: drawHunts
+11:30:07,385 INFO  ~ initView route: drawHunts
+11:30:09,634 INFO  ~ initView route: drawHunts
+11:31:19,785 INFO  ~ initView route: drawHunts
+11:31:37,497 INFO  ~ initView route: drawHunts
+11:31:53,748 INFO  ~ initView route: drawHunts
+11:32:54,627 INFO  ~ initView route: drawHunts
+11:33:05,735 INFO  ~ initView route: drawHunts
+11:34:54,060 INFO  ~ initView route: drawHunts
+11:35:06,511 INFO  ~ initView route: drawHunts
+11:35:16,524 INFO  ~ initView route: drawHunts
+11:36:16,184 INFO  ~ initView route: drawHunts
+11:38:15,036 INFO  ~ initView route: drawHunts
+11:38:41,393 INFO  ~ initView route: drawHunts
+11:39:01,287 INFO  ~ initView route: drawHunts
+11:39:13,677 INFO  ~ initView route: drawHunts
+11:39:34,033 INFO  ~ initView route: drawHunts
+11:40:36,550 INFO  ~ initView route: drawHunts
+11:41:04,816 INFO  ~ initView route: drawHunts
+11:42:38,036 INFO  ~ initView route: drawHunts
+11:42:58,118 INFO  ~ initView route: drawHunts
+11:43:06,431 INFO  ~ initView route: drawHunts
+11:45:03,866 INFO  ~ initView route: drawHunts
+11:45:08,939 INFO  ~ initView route: 
+11:46:57,740 INFO  ~ initView route: drawHunts
+11:47:35,848 INFO  ~ initView route: drawHunts
+11:48:05,323 INFO  ~ initView route: drawHunts
+11:49:02,808 INFO  ~ initView route: drawHunts
+11:50:05,301 INFO  ~ initView route: drawHunts
+11:51:30,682 INFO  ~ initView route: drawHunts
+11:51:51,695 INFO  ~ initView route: drawHunts
+11:52:20,521 INFO  ~ initView route: drawHunts
+11:53:05,625 INFO  ~ initView route: drawHunts
+11:54:44,009 INFO  ~ initView route: drawHunts
+11:55:34,477 INFO  ~ initView route: drawHunts
+11:56:07,276 INFO  ~ initView route: drawHunts
+11:56:20,526 INFO  ~ initView route: drawHunts
+11:56:33,747 INFO  ~ initView route: drawHunts
+11:56:50,979 INFO  ~ initView route: drawHunts
+11:58:08,157 INFO  ~ initView route: drawHunts
+11:58:28,874 INFO  ~ initView route: drawHunts
+11:59:15,852 INFO  ~ initView route: drawHunts
+12:00:32,535 INFO  ~ initView route: drawHunts
+12:01:59,293 INFO  ~ initView route: drawHunts
+12:03:42,253 INFO  ~ initView route: drawHunts
+12:04:40,193 INFO  ~ initView route: drawHunts
+12:05:13,456 INFO  ~ initView route: drawHunts
+12:06:13,996 INFO  ~ initView route: drawHunts
+12:07:41,075 INFO  ~ initView route: drawHunts
+12:08:15,489 INFO  ~ initView route: drawHunts
+12:08:47,021 INFO  ~ initView route: drawHunts
+12:09:36,560 INFO  ~ initView route: drawHunts
+12:13:00,000 INFO  ~ initView route: drawHunts
+12:14:09,836 INFO  ~ initView route: drawHunts
+12:14:22,075 INFO  ~ initView route: drawHunts
+12:14:41,240 INFO  ~ initView route: drawHunts
+12:15:53,913 INFO  ~ initView route: drawHunts
+12:16:30,664 INFO  ~ initView route: drawHunts
+12:16:37,811 INFO  ~ initView route: drawHunts
+12:16:56,335 INFO  ~ initView route: drawHunts
+14:10:41,449 INFO  ~ initView route: drawHunts
+14:11:04,104 INFO  ~ initView route: drawHunts
+14:15:30,943 INFO  ~ initView route: drawHunts
+14:16:59,392 INFO  ~ initView route: drawHunts
+14:18:24,238 INFO  ~ initView route: drawHunts
+14:18:44,122 INFO  ~ initView route: drawHunts
+14:21:06,461 INFO  ~ initView route: drawHunts
+14:21:43,372 INFO  ~ initView route: drawHunts
+14:37:49,647 INFO  ~ initView route: drawHunts
+14:42:19,947 INFO  ~ initView route: drawHunts
+14:43:40,260 INFO  ~ initView route: drawHunts
+14:45:24,727 INFO  ~ initView route: drawHunts
+14:45:33,540 INFO  ~ initView route: drawHunts
+14:45:53,701 INFO  ~ initView route: drawHunts
+14:46:27,574 INFO  ~ initView route: drawHunts
+14:46:53,922 INFO  ~ initView route: drawHunts
+14:47:06,019 INFO  ~ initView route: drawHunts
+14:47:58,299 INFO  ~ initView route: drawHunts
+14:49:06,767 INFO  ~ initView route: drawHunts
+14:49:44,682 INFO  ~ initView route: drawHunts
+14:50:38,610 INFO  ~ initView route: drawHunts
+14:51:59,577 INFO  ~ initView route: drawHunts
+14:52:38,540 INFO  ~ initView route: drawHunts
+14:54:31,255 INFO  ~ initView route: drawHunts
+14:55:22,593 INFO  ~ initView route: drawHunts
+14:56:08,192 INFO  ~ initView route: drawHunts
+14:56:30,474 INFO  ~ initView route: drawHunts
+14:59:45,888 INFO  ~ initView route: drawHunts
+15:01:28,872 INFO  ~ initView route: drawHunts
+15:02:03,683 INFO  ~ initView route: drawHunts
+15:02:37,073 INFO  ~ initView route: drawHunts
+15:04:02,019 INFO  ~ initView route: drawHunts
+15:04:35,867 INFO  ~ initView route: drawHunts
+15:04:42,225 INFO  ~ initView route: drawHunts
+15:05:19,082 INFO  ~ initView route: drawHunts
+15:05:41,203 INFO  ~ initView route: drawHunts
+15:05:53,181 INFO  ~ initView route: drawHunts
+15:06:02,722 INFO  ~ initView route: drawHunts
+15:07:16,742 INFO  ~ initView route: drawHunts
+15:07:53,676 INFO  ~ initView route: drawHunts
+15:09:00,500 INFO  ~ initView route: drawHunts
+15:09:30,003 INFO  ~ initView route: drawHunts
+15:09:51,624 INFO  ~ initView route: drawHunts
+15:10:43,275 INFO  ~ initView route: drawHunts
+15:12:17,544 INFO  ~ initView route: drawHunts
+15:13:04,719 INFO  ~ initView route: drawHunts
+15:14:15,923 INFO  ~ initView route: drawHunts
+15:14:57,649 INFO  ~ initView route: drawHunts
+15:15:06,101 INFO  ~ initView route: drawHunts
+15:15:21,723 INFO  ~ initView route: drawHunts
+15:16:05,673 INFO  ~ initView route: drawHunts
+15:16:26,543 INFO  ~ initView route: drawHunts
+15:16:49,028 INFO  ~ initView route: drawHunts
+15:18:11,504 INFO  ~ initView route: drawHunts
+15:19:11,682 INFO  ~ initView route: drawHunts
+15:21:02,784 INFO  ~ initView route: drawHunts
+15:21:59,220 INFO  ~ initView route: drawHunts
+15:27:09,077 INFO  ~ initView route: drawHunts
+15:28:58,139 INFO  ~ initView route: drawHunts
+15:29:38,792 INFO  ~ initView route: drawHunts
+15:29:47,656 INFO  ~ initView route: drawHunts
+15:30:39,234 INFO  ~ initView route: drawHunts
+15:32:41,870 INFO  ~ initView route: drawHunts
+15:33:15,283 INFO  ~ initView route: drawHunts
+15:33:37,456 INFO  ~ initView route: drawHunts
+15:34:01,481 INFO  ~ initView route: drawHunts
+15:34:24,995 INFO  ~ initView route: drawHunts
+15:34:33,203 INFO  ~ initView route: drawHunts
+17:15:06,271 INFO  ~ initView route: drawHunts
+17:18:14,577 INFO  ~ initView route: drawHunts
+17:21:51,910 INFO  ~ initView route: drawHunts
+17:22:59,416 INFO  ~ initView route: drawHunts
+17:23:17,023 INFO  ~ initView route: drawHunts
+17:23:40,656 INFO  ~ initView route: drawHunts
+17:24:01,116 INFO  ~ initView route: drawHunts
+17:24:36,544 INFO  ~ initView route: drawHunts
+17:24:56,632 INFO  ~ initView route: drawHunts
+17:25:12,959 INFO  ~ initView route: drawHunts
+17:25:51,065 INFO  ~ initView route: drawHunts
+17:25:57,983 INFO  ~ initView route: drawHunts
+17:26:43,133 INFO  ~ initView route: drawHunts
+17:26:47,711 INFO  ~ initView route: drawHunts
+17:27:33,321 INFO  ~ initView route: drawHunts
+17:28:22,605 INFO  ~ initView route: drawHunts
+17:28:25,747 INFO  ~ initView route: drawHunts
+17:29:05,761 INFO  ~ initView route: drawHunts
+17:30:34,043 INFO  ~ initView route: drawHunts
+17:33:50,301 INFO  ~ initView route: drawHunts
+17:36:35,356 INFO  ~ initView route: drawHunts
+17:36:49,497 INFO  ~ initView route: drawHunts
+17:37:41,219 INFO  ~ initView route: drawHunts
+17:37:47,606 INFO  ~ initView route: drawHunts
+17:43:46,102 INFO  ~ initView route: drawHunts
+17:43:52,512 INFO  ~ initView route: drawHunts
+17:44:47,939 INFO  ~ initView route: drawHunts
+17:45:05,278 INFO  ~ initView route: drawHunts
+17:45:13,557 INFO  ~ initView route: drawHunts
+17:45:45,340 INFO  ~ initView route: drawHunts
+17:46:53,420 INFO  ~ initView route: drawHunts
+17:47:59,378 INFO  ~ initView route: drawHunts
+17:48:07,953 INFO  ~ initView route: drawHunts
+17:49:55,703 INFO  ~ initView route: drawHunts
+17:50:02,909 INFO  ~ initView route: drawHunts
+17:50:15,328 INFO  ~ initView route: drawHunts
+17:50:58,794 INFO  ~ initView route: drawHunts
+17:53:04,807 INFO  ~ initView route: drawHunts
+17:53:52,006 INFO  ~ initView route: drawHunts
+17:54:13,996 INFO  ~ initView route: drawHunts
+17:54:46,252 INFO  ~ initView route: drawHunts
+17:55:01,148 INFO  ~ initView route: drawHunts
+17:56:08,013 INFO  ~ initView route: drawHunts
+17:57:16,941 INFO  ~ initView route: drawHunts
+17:58:49,218 INFO  ~ initView route: drawHunts
+18:16:12,883 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+18:16:29,548 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+18:16:52,366 INFO  ~ initView route: drawHunts
+18:16:53,715 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+18:17:52,343 INFO  ~ initView route: drawHunts
+18:17:53,458 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+08:55:49,524 INFO  ~ Starting /home/jordan/projects/alaska-hunts
+08:55:50,002 WARN  ~ You're running Play! in DEV mode
+08:55:50,081 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+08:56:45,094 INFO  ~ Application 'alaska-hunts' is now started !
+08:56:45,172 INFO  ~ initView route: drawHunts
+08:56:47,679 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+09:27:43,019 INFO  ~ initView route: drawHunts
+09:27:44,419 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+09:27:44,431 INFO  ~ initView route: drawHunts
+09:27:45,498 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+09:28:19,789 INFO  ~ initView route: drawHunts
+09:28:20,835 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+09:28:33,689 INFO  ~ initView route: drawHunts
+09:28:34,794 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+09:29:08,763 INFO  ~ initView route: drawHunts
+09:29:09,867 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+09:34:23,588 INFO  ~ initView route: drawHunts
+09:34:24,616 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+09:34:50,455 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+09:39:16,696 INFO  ~ initView route: drawHunts
+09:39:17,917 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+09:39:43,311 INFO  ~ initView route: drawHunts
+09:39:44,369 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+09:46:24,918 INFO  ~ initView route: drawHunts
+09:46:26,156 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+09:57:22,527 INFO  ~ initView route: drawHunts
+09:57:23,812 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+10:01:51,507 INFO  ~ initView route: drawHunts
+10:01:52,692 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+10:07:16,845 INFO  ~ initView route: drawHunts
+10:07:17,896 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+10:09:51,238 INFO  ~ initView route: drawHunts
+10:09:52,334 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:04:30,303 INFO  ~ initView route: drawHunts
+14:04:36,539 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:06:29,376 INFO  ~ initView route: drawHunts
+14:06:45,031 INFO  ~ initView route: drawHunts
+14:06:46,214 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:07:13,146 INFO  ~ initView route: drawHunts
+14:07:14,222 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:09:38,085 INFO  ~ initView route: drawHunts
+14:09:39,171 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:10:26,254 INFO  ~ initView route: drawHunts
+14:10:32,116 INFO  ~ initView route: drawHunts
+14:10:33,290 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:10:43,020 INFO  ~ initView route: drawHunts
+14:10:44,030 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:10:49,204 INFO  ~ initView route: drawHunts
+14:10:50,237 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:11:36,379 INFO  ~ initView route: drawHunts
+14:11:37,487 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:12:51,553 INFO  ~ initView route: drawHunts
+14:12:52,606 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:14:00,876 INFO  ~ initView route: drawHunts
+14:14:02,031 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:15:25,534 INFO  ~ initView route: drawHunts
+14:15:26,567 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:15:36,662 INFO  ~ initView route: drawHunts
+14:15:37,706 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:16:05,553 INFO  ~ initView route: drawHunts
+14:16:06,616 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:16:14,985 INFO  ~ initView route: drawHunts
+14:16:16,008 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:16:34,758 INFO  ~ initView route: drawHunts
+14:16:35,786 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:17:03,473 INFO  ~ initView route: drawHunts
+14:17:04,532 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:18:01,307 INFO  ~ initView route: drawHunts
+14:18:02,327 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:18:42,293 INFO  ~ initView route: drawHunts
+14:18:43,352 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:20:26,367 INFO  ~ initView route: drawHunts
+14:20:27,467 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:20:45,245 INFO  ~ initView route: drawHunts
+14:20:46,260 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:21:07,165 INFO  ~ initView route: drawHunts
+14:21:08,430 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:21:19,661 INFO  ~ initView route: drawHunts
+14:21:20,636 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:23:26,882 INFO  ~ initView route: drawHunts
+14:23:27,878 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:24:11,550 INFO  ~ initView route: drawHunts
+14:24:12,621 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:24:59,122 INFO  ~ initView route: drawHunts
+14:25:00,235 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:26:38,446 INFO  ~ initView route: drawHunts
+14:26:39,539 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:26:58,166 INFO  ~ initView route: drawHunts
+14:26:59,297 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:27:47,958 INFO  ~ initView route: drawHunts
+14:27:49,018 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:28:31,484 INFO  ~ initView route: drawHunts
+14:28:32,549 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:28:35,251 INFO  ~ initView route: drawHunts
+14:28:36,255 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:30:22,321 INFO  ~ initView route: drawHunts
+14:30:23,427 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:32:48,173 INFO  ~ initView route: drawHunts
+14:32:49,216 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:33:27,179 INFO  ~ initView route: drawHunts
+14:33:28,239 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:33:54,750 INFO  ~ initView route: drawHunts
+14:33:55,759 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:35:20,675 INFO  ~ initView route: drawHunts
+14:35:21,747 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:36:16,569 INFO  ~ initView route: drawHunts
+14:36:17,654 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:36:35,038 INFO  ~ initView route: drawHunts
+14:36:36,058 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:37:10,389 INFO  ~ initView route: drawHunts
+14:37:11,749 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:37:23,209 INFO  ~ initView route: drawHunts
+14:37:24,256 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:37:42,758 INFO  ~ initView route: drawHunts
+14:37:43,787 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:38:02,320 INFO  ~ initView route: drawHunts
+14:38:03,332 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+13:56:00,294 INFO  ~ initView route: drawHunts
+13:56:06,576 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+13:56:50,031 INFO  ~ initView route: drawHunts
+13:56:51,238 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:06:48,253 INFO  ~ initView route: drawHunts
+14:08:38,665 INFO  ~ initView route: drawHunts
+14:09:17,843 INFO  ~ initView route: drawHunts
+14:09:57,721 INFO  ~ initView route: drawHunts
+14:10:36,551 INFO  ~ initView route: drawHunts
+14:10:43,222 INFO  ~ initView route: drawHunts
+14:11:26,732 INFO  ~ initView route: drawHunts
+14:13:28,953 INFO  ~ initView route: drawHunts
+14:14:38,333 INFO  ~ initView route: drawHunts
+14:14:39,540 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:41:57,602 INFO  ~ initView route: drawHunts
+14:41:58,690 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:42:19,036 INFO  ~ initView route: drawHunts
+14:42:20,248 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:42:34,429 INFO  ~ initView route: drawHunts
+14:42:35,488 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:42:59,052 INFO  ~ initView route: drawHunts
+14:43:00,182 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:43:10,715 INFO  ~ initView route: drawHunts
+14:43:11,730 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:43:31,999 INFO  ~ initView route: drawHunts
+14:43:33,061 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:43:41,740 INFO  ~ initView route: drawHunts
+14:43:42,741 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:44:54,848 INFO  ~ initView route: drawHunts
+14:44:56,029 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:45:29,494 INFO  ~ initView route: drawHunts
+14:45:30,600 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:47:06,114 INFO  ~ initView route: drawHunts
+14:47:07,055 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:47:15,632 INFO  ~ initView route: drawHunts
+14:47:16,593 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:47:48,241 INFO  ~ initView route: drawHunts
+14:47:49,266 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:48:56,038 INFO  ~ initView route: drawHunts
+14:48:57,150 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:49:59,527 INFO  ~ initView route: drawHunts
+14:50:00,594 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:50:08,178 INFO  ~ initView route: drawHunts
+14:50:09,222 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:50:19,956 INFO  ~ initView route: drawHunts
+14:51:31,077 INFO  ~ initView route: drawHunts
+14:52:14,362 INFO  ~ initView route: drawHunts
+14:52:18,284 INFO  ~ initView route: drawHunts
+14:52:35,282 INFO  ~ initView route: drawHunts
+14:52:36,344 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:53:06,723 INFO  ~ initView route: drawHunts
+14:53:07,876 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:53:26,516 INFO  ~ initView route: drawHunts
+14:53:27,597 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+14:53:34,386 INFO  ~ initView route: drawHunts
+14:53:35,445 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:03:02,111 INFO  ~ initView route: drawHunts
+15:03:03,250 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:03:33,098 INFO  ~ initView route: drawHunts
+15:03:34,172 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:04:01,842 INFO  ~ initView route: drawHunts
+15:04:02,964 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:04:35,079 INFO  ~ initView route: drawHunts
+15:04:36,150 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:04:54,778 INFO  ~ initView route: drawHunts
+15:04:55,865 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:05:10,962 INFO  ~ initView route: drawHunts
+15:05:12,054 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:07:30,041 INFO  ~ initView route: drawHunts
+15:07:31,196 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:18:03,109 INFO  ~ initView route: drawHunts
+15:18:04,260 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:18:30,617 INFO  ~ initView route: drawHunts
+15:18:31,657 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:20:41,499 INFO  ~ initView route: drawHunts
+15:20:42,567 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:20:52,383 INFO  ~ initView route: drawHunts
+15:20:53,435 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:22:06,680 INFO  ~ initView route: drawHunts
+15:22:07,756 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:24:54,211 INFO  ~ initView route: drawHunts
+15:24:55,202 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:26:21,213 INFO  ~ initView route: drawHunts
+15:26:22,599 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:32:13,719 INFO  ~ initView route: drawHunts
+15:32:14,723 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:34:45,807 INFO  ~ initView route: drawHunts
+15:34:46,903 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:36:20,262 INFO  ~ initView route: drawHunts
+15:36:21,440 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:44:44,921 INFO  ~ initView route: drawHunts
+15:44:45,941 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:46:35,505 INFO  ~ initView route: drawHunts
+15:46:36,598 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:46:47,218 INFO  ~ initView route: drawHunts
+15:46:48,268 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:47:27,525 INFO  ~ initView route: drawHunts
+15:47:28,621 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:49:54,592 INFO  ~ initView route: drawHunts
+15:49:55,638 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:49:58,474 INFO  ~ initView route: drawHunts
+15:49:59,503 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+15:59:34,737 INFO  ~ initView route: drawHunts
+15:59:35,915 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:08:57,104 INFO  ~ initView route: drawHunts
+16:08:58,228 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:09:42,227 INFO  ~ initView route: drawHunts
+16:09:43,415 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:13:16,029 INFO  ~ initView route: drawHunts
+16:13:17,157 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:17:23,806 INFO  ~ initView route: drawHunts
+16:17:24,933 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:22:04,351 INFO  ~ initView route: drawHunts
+16:22:05,490 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:23:13,291 INFO  ~ initView route: drawHunts
+16:23:14,334 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:30:03,574 INFO  ~ initView route: drawHunts
+16:30:04,648 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:30:11,862 INFO  ~ initView route: drawHunts
+16:30:12,798 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:31:52,883 INFO  ~ initView route: drawHunts
+16:31:53,967 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:35:31,623 INFO  ~ initView route: drawHunts
+16:37:47,426 INFO  ~ initView route: drawHunts
+16:38:22,821 INFO  ~ initView route: drawHunts
+16:38:24,289 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:38:57,230 INFO  ~ initView route: drawHunts
+16:38:58,312 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:39:57,925 INFO  ~ initView route: drawHunts
+16:39:58,995 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:40:21,280 INFO  ~ initView route: drawHunts
+16:40:22,630 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:40:42,271 INFO  ~ initView route: drawHunts
+16:40:43,344 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:41:21,163 INFO  ~ initView route: drawHunts
+16:41:22,147 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:41:25,193 INFO  ~ initView route: drawHunts
+16:41:26,135 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:42:38,268 INFO  ~ initView route: drawHunts
+16:42:39,362 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:47:37,924 INFO  ~ initView route: drawHunts
+16:47:39,055 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:47:58,772 INFO  ~ initView route: drawHunts
+16:47:59,797 INFO  ~ table sql select distinct species from hunt.draw_hunt 
+16:50:24,080 INFO  ~ initView route: drawHunts
+16:50:25,513 INFO  ~ table sql select distinct species from hunt.draw_hunt 

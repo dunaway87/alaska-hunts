@@ -13,11 +13,7 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 		species:"#species-container",
 		units:"#unit-container",
 	},
-  childEvents: {
-    
-      
-   
-  },
+
 
 	onShow: function(){
 		this.showSpeciesFilter();
@@ -28,43 +24,11 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 
 	showSpeciesFilter: function(){
 		var that = this;
-		var category = that.options.category;
-		var Categories = Backbone.Collection.extend({
-			model:category
-		});
+	
 
 		var filters_view;
 		var categories;
-		$.getJSON(api.filters(), function(filters){
-			
-			log.debug("filters %o",filters)
-			var filter = that.options.filter;
-			var Filters = Backbone.Collection.extend({
-				model:filter
-			});
-			var filters = new Filters(filters);
-			filters.each(function(filter){
-				
-				categories = filter.get('range');
-				log.debug("cats %o ", categories);
-				var CategoryCollection = new Categories(categories);
-				filter.set('range', CategoryCollection);
-				log.debug("filter %o ", filter)
-			})
-			log.debug("sdfl;j %o ", filter)
-			  filters_view = new FiltersView({
-				collection:filters
-			});
-
-
-			 filters_view.on('childview:species:filter', function(childView,data){
-			 	that.options.data = data
-			 	that.trigger('layer:filter', data)
-				log.debug("triggered %o ", that.options.data)
-			})
-			that.getRegion('species').show(filters_view);
-
-		})
+		
 		
 	},
 
@@ -73,9 +37,7 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 	initialize: function(options){
 		this.options = options;
 		this.model = new Backbone.Model(options);
-		this.options.category = Backbone.Model.extend({});
-		this.options.filter = Backbone.Model.extend({});
-
+		
 	}
 })
 
@@ -83,14 +45,7 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 var RangeItemView = Backbone.Marionette.ItemView.extend({
 	template:RangeItemTmpl,
 	tagName:"option",
-	/*triggers:{
-		"change": "getSpecies"
-	},
-		getSpecies: function(){
-		 var model = this.collection.at($(':selected', this.$el).index());
-		 log.debug("item view trigger model %o: ", model)
-		 this.trigger("species:filter", model);
-	},*/
+	
 
 	initialize: function(options){
 		this.options = options
@@ -110,7 +65,7 @@ var RangeCompView = Backbone.Marionette.CompositeView.extend({
 	onShow: function(){
 		var that = this;
 		log.debug("comp twice")
-		log.debug("options yo %o: ",this.model.attributes.range.models)
+		log.debug("options yo %o: ",this.collection)
 		
 		var select = this.$el.select();
 		
@@ -140,15 +95,9 @@ var RangeCompView = Backbone.Marionette.CompositeView.extend({
 
 });
 
-var FiltersView = Backbone.Marionette.CollectionView.extend({
+/*var FiltersView = Backbone.Marionette.CollectionView.extend({
 	id:"filters-view",
 	childView:RangeCompView,
-
-	childEvents: {
-    	"species:filter": function(model){
-    		
-    	}
-  },
 	
 
-});
+});*/

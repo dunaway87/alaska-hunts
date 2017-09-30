@@ -11,8 +11,9 @@
 			"public/lib/backbone.radio/backbone.radio.min.js",
 			"public/lib/mustache/mustache.min.js",
 			"public/lib/leaflet/leaflet-src.js",
-			"public/lib/leaflet.js ",
-			
+			"public/lib/leaflet.js"
+
+
 		],
 		"dest": "public/js/libs.cat.js",
 		"dist": "public/js/libs.min.js"
