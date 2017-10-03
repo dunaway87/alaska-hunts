@@ -14,3 +14,12 @@
 18:00:18,750 INFO  ~ initView route: example
 18:00:20,029 INFO  ~ Example.getFilters
 18:00:32,535 INFO  ~ Example.saveArtist: Jordan Jenckes
+08:28:55,874 INFO  ~ Starting /home/john/projects/mountain-house-project/alaska-hunts
+08:28:56,192 WARN  ~ You're running Play! in DEV mode
+08:28:56,228 ERROR ~ Could not bind on port 9000
+08:29:32,189 INFO  ~ Starting /home/john/projects/mountain-house-project/alaska-hunts
+08:29:32,517 WARN  ~ You're running Play! in DEV mode
+08:29:32,557 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+08:29:33,482 INFO  ~ Application 'alaska-hunts' is now started !
+08:29:53,874 INFO  ~ initView route: 
+08:29:54,172 INFO  ~ Example.getFilters
