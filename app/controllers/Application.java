@@ -27,7 +27,15 @@ public class Application extends Controller {
 	}
 
 	public static void getFilters(){
-		Connection conn = new DatabaseUtils().getConnection();
+		
+			JsonObject filters = Filters.getFilters();
+			
+			
+			
+			renderJSON(filters.toString());
+		}
+	}
+		/*Connection conn = new DatabaseUtils().getConnection();
 		String speciesSQL = SQL.GETSPECIES;
 		JsonArray species = new JsonArray();
 
@@ -57,5 +65,4 @@ public class Application extends Controller {
 		}
 		renderJSON(species.toString());
 
-	}
-}
+	}*/

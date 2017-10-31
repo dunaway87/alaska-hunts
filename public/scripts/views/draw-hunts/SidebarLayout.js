@@ -3,7 +3,11 @@ var tmpl = require('draw-hunts/SidebarLayout.tmpl');
 var RangeCompTmpl = require('draw-hunts/RangeCompTmpl.tmpl');
 var RangeItemTmpl = require('draw-hunts/RangeItemTmpl.tmpl');
 var FiltersCollectionTmpl = require('draw-hunts/FiltersCollectionTmpl.tmpl');
-
+var SpeciesFiltersView = require('views/filters/SpeciesFilterView');
+var UnitsFilterView = require('views/filters/UnitsFilterView');
+var FilterModel	= require("models/FilterModel");
+var SuccessRateView = require('views/filters/SuccessRateView');
+var DrawRateView = require('views/filters/DrawRateView');
 
 module.exports = Backbone.Marionette.LayoutView.extend({
 	template: tmpl,
@@ -11,93 +15,123 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 
 	regions:{
 		species:"#species-container",
-		units:"#unit-container",
+		units:"#units-container",
+		successrate:"#successrate-container",
+		drawrate:"#drawrate-container",
 	},
 
 
-	onShow: function(){
-		this.showSpeciesFilter();
+	onShow: function(options){
+		this.showFilters();
 		log.debug("side layout")
 
 		
 	},
 
-	showSpeciesFilter: function(){
+
+	showFilters: function(options){
+			
 		var that = this;
-	
+			$.getJSON(api.filters(), function(filters){
+				that.showSuccesFilter(filters.successrate);
+				that.showDrawRate(filters.drawrate);
 
-		var filters_view;
-		var categories;
-		
-		
-	},
+				log.debug("filters %o ", filters.species)
+				var species_filters_view = new SpeciesFiltersView({
+					model: new Backbone.Collection(filters.species.range)
+				})
 
+				var units_filter_view = new UnitsFilterView({
+					model: new Backbone.Collection(filters.unit.range)
+				})
 
+				
 
-	initialize: function(options){
-		this.options = options;
-		this.model = new Backbone.Model(options);
-		
-	}
-})
+				that.getRegion('species').show(species_filters_view);
+				that.getRegion('units').show(units_filter_view);
 
+				species_filters_view.on('hunt:filter',function(data){
+					var filterData = FilterModel.toJSON();
+					for(var i in filterData){
+						var key = i;
+						var value = filterData[i]
+						for(var j in value){
+							var val = value[j]
+						}
+						log.debug("key %s ", key)
+						log.debug("value %s ", val)
+					}
+					log.debug("heheh %o ",FilterModel.toJSON());
+					that.options.speciesFilter=data.label;
 
-var RangeItemView = Backbone.Marionette.ItemView.extend({
-	template:RangeItemTmpl,
-	tagName:"option",
-	
+					that.options.wmsLayer.setParams({
+						CQL_FILTER:'species='+ "\'"+data.label.toLowerCase()+"\'"
+						//CQL_FILTER:'unit='+data.label
+					})	
 
-	initialize: function(options){
-		this.options = options
-	}
-});
+				})
 
-var RangeCompView = Backbone.Marionette.CompositeView.extend({
-	template:RangeCompTmpl,
-
-	childView:RangeItemView,
-	tagName: "select",
-
-	events:{
-		"change": "getSpecies"
-	},
-
-	onShow: function(){
-		var that = this;
-		log.debug("comp twice")
-		log.debug("options yo %o: ",this.collection)
-		
-		var select = this.$el.select();
-		
-		select.select2({
-			data: this.collection,
-			dropdownAutoWidth : true,
-    		width: 'auto',
-			placeholder:"Select "+ this.model.attributes.label,
+				var cqlFilter;
+				units_filter_view.on('hunt:filter',function(){
 					
-			minimumResultsForSearch: 99,
-		})
+					log.debug("heheh, %o ", FilterModel.toJSON());
+					
+					var filterData = FilterModel.toJSON();
+					for(var i in filterData){
+						var key = i;
+						var value = filterData[i]
+						for(var j in value){
+							var val = value[j]
+						}
+						log.debug("key %s ", key)
+						log.debug("value %s ", val)
+
+						cqlFilter = key+":="+"\'"+val+"\'"
+
+					}
 
 
-	},
+					that.options.wmsLayer.setParams({
+						//CQL_FILTER:'unit='+ "\'"+data.label/*.toLowerCase()*/+"\'"
+						CQL_FILTER:cqlFilter
+					})	
 
-	getSpecies: function(){
-		 var model = this.collection.at($(':selected', this.$el).index()).attributes;
-		 log.debug("species model %o: ", this.collection.at($(':selected', this.$el).index()).attributes)
-		 this.trigger("species:filter", model);
-	},
+				})
+				
+			})
 
-	initialize:function(){
-		this.collection = this.model.get('range');
-		log.debug("collection %o ",this.collection);
-		
-	}
+		},
 
-});
+		showSuccesFilter:function(data){
+			var that =this;
+			log.debug("successrate %o ", data.range)
+			var successrate_view = new SuccessRateView(data.range)
 
-/*var FiltersView = Backbone.Marionette.CollectionView.extend({
-	id:"filters-view",
-	childView:RangeCompView,
-	
+			that.getRegion('successrate').show(successrate_view);
 
-});*/
+		},
+
+		showDrawRate: function(data){
+			var that= this;
+			log.debug("draw %o ", data.range)
+			var drawrate_view = new DrawRateView(data.range);
+
+			that.getRegion('drawrate').show(drawrate_view);
+			drawrate_view.on('drawrate:filter', function(){
+				log.debug("drawrate filter %o ", FilterModel)
+			})
+		},
+
+
+		initialize: function(options){
+			this.options = options;
+			log.debug("hehe %o ", options)
+			this.model = new Backbone.Model();
+		}
+
+
+	}); 
+
+
+
+

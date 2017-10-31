@@ -1,0 +1,27 @@
+
+			/*var filter = that.options.filter;
+			var Filters = Backbone.Collection.extend({
+				model:filter
+			});
+			var filters = new Filters(filters);
+			filters.each(function(filter){
+				
+				categories = filter.get('range');
+				log.debug("cats %o ", categories);
+				var CategoryCollection = new Categories(categories);
+				filter.set('range', CategoryCollection);
+				log.debug("filter %o ", filter)
+			})
+			log.debug("sdfl;j %o ", filter)
+			  filters_view = new FiltersView({
+				collection:filters
+			});
+
+
+			 filters_view.on('childview:species:filter', function(childView,data){
+			 	that.options.data = data
+			 	that.trigger('layer:filter', data)
+				log.debug("triggered %o ", that.options.data)
+			})
+			that.getRegion('species').show(filters_view);
+*/
