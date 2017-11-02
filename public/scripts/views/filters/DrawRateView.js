@@ -40,7 +40,7 @@ module.exports = Backbone.Marionette.ItemView.extend({
 		FilterModel.get("drawMin").push(ui.values[ 0 ]);
 		FilterModel.get("drawMax").push(ui.values[ 1 ]);
 		log.debug('hehe')
-		that.triggess();
+		this.trigger("drawrate:filter", this.model);
 	},
 	triggess:function(){
 		this.trigger("drawrate:filter", this.model);

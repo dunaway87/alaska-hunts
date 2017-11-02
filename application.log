@@ -7181,3 +7181,98 @@ play.exceptions.CompilationException: Syntax error on token "}", delete this tok
 08:29:54,612 INFO  ~ initView route: drawHunts
 08:30:11,774 INFO  ~ initView route: drawHunts
 08:30:46,471 INFO  ~ initView route: drawHunts
+01:40:52,150 INFO  ~ Starting /home/jordan/projects/alaska-hunts
+01:40:52,638 WARN  ~ You're running Play! in DEV mode
+01:40:52,717 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+01:41:08,151 INFO  ~ Application 'alaska-hunts' is now started !
+01:41:08,230 INFO  ~ initView route: drawHunts
+01:41:19,662 INFO  ~ error making connection!!! org.postgresql.util.PSQLException: The connection attempt failed.
+01:41:19,684 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Species.getFilter(Species.java:31)
+	at api.filters.Filters.getFilters(Filters.java:26)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+01:41:19,689 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Unit.getUnitFilter(Unit.java:55)
+	at api.filters.Filters.getFilters(Filters.java:27)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+01:41:19,690 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Unit.getSubunitFilter(Unit.java:28)
+	at api.filters.Filters.getFilters(Filters.java:28)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+01:41:19,691 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Residency.getFilter(Residency.java:28)
+	at api.filters.Filters.getFilters(Filters.java:31)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+01:41:19,796 ERROR ~ 
+
+@75ol81ncl
+Internal Server Error (500) for request GET /api/hunts/filters
+
+Execution exception (In /app/api/filters/Filters.java around line 34)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at api.filters.Filters.getFilters(Filters.java:34)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+01:41:28,959 INFO  ~ initView route: drawHunts
+01:41:57,268 INFO  ~ initView route: drawHunts
+01:42:15,453 INFO  ~ initView route: drawHunts
+01:48:22,683 INFO  ~ initView route: drawHunts
+01:49:41,282 INFO  ~ initView route: drawHunts
+01:50:08,219 INFO  ~ initView route: drawHunts
+01:50:15,570 INFO  ~ initView route: drawHunts
+01:51:11,446 INFO  ~ initView route: drawHunts
+01:52:56,364 INFO  ~ initView route: drawHunts
+01:58:28,257 INFO  ~ initView route: drawHunts
+02:06:32,614 INFO  ~ initView route: drawHunts
+02:07:25,214 INFO  ~ initView route: drawHunts
+02:08:13,004 INFO  ~ initView route: drawHunts
+02:08:59,987 INFO  ~ initView route: drawHunts
+02:10:18,561 INFO  ~ initView route: drawHunts
+02:12:06,812 INFO  ~ initView route: drawHunts
+02:13:08,321 INFO  ~ initView route: drawHunts
+02:13:38,705 INFO  ~ initView route: drawHunts
+02:14:00,291 INFO  ~ initView route: drawHunts
+02:18:25,393 INFO  ~ initView route: drawHunts
+02:21:00,863 INFO  ~ initView route: drawHunts
+02:26:19,942 INFO  ~ initView route: drawHunts
+02:27:52,990 INFO  ~ initView route: drawHunts
+02:29:28,129 INFO  ~ initView route: drawHunts
+02:30:48,982 INFO  ~ initView route: drawHunts

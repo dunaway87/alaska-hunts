@@ -45,11 +45,17 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 					model: new Backbone.Collection(filters.unit.range)
 				})
 
+				/*var subunits_filter_view = new SubunitsFilterView({
+					model: new Backbone.Collection(filters.subunit.range)
+				})*/
+
 				
 
 				that.getRegion('species').show(species_filters_view);
 				that.getRegion('units').show(units_filter_view);
 
+				var speciesCql= null;
+				var unitsCql = null;
 				species_filters_view.on('hunt:filter',function(data){
 					var filterData = FilterModel.toJSON();
 					for(var i in filterData){
@@ -58,23 +64,38 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 						for(var j in value){
 							var val = value[j]
 						}
-						log.debug("key %s ", key)
-						log.debug("value %s ", val)
+					
 					}
-					log.debug("heheh %o ",FilterModel.toJSON());
+					log.debug("species filters %o ",FilterModel.toJSON());
 					that.options.speciesFilter=data.label;
+					speciesCql= key+"="+"\'"+val.toLowerCase()+"\'"
+					log.debug("unitsCql %o ", unitsCql)
+
+					if(speciesCql && unitsCql !==null){
+						cqlFilter=speciesCql+" and " + unitsCql
+					}else if(speciesCql !==null){
+						cqlFilter = speciesCql  
+					}else if(unitsCql !==null){
+						sqlFilter = unitsCql 
+					}else{
+						cqlFilter = "species='moose'";
+					}
 
 					that.options.wmsLayer.setParams({
-						CQL_FILTER:'species='+ "\'"+data.label.toLowerCase()+"\'"
-						//CQL_FILTER:'unit='+data.label
+						CQL_FILTER:cqlFilter
 					})	
+
+					/*that.options.wmsLayer.setParams({
+						CQL_FILTER:'species='+ "\'"+data.label.toLowerCase()+"\'"
+						
+					})	*/
 
 				})
 
-				var cqlFilter;
+				
 				units_filter_view.on('hunt:filter',function(){
 					
-					log.debug("heheh, %o ", FilterModel.toJSON());
+					log.debug("units filter, %o ", FilterModel.toJSON());
 					
 					var filterData = FilterModel.toJSON();
 					for(var i in filterData){
@@ -83,24 +104,33 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 						for(var j in value){
 							var val = value[j]
 						}
-						log.debug("key %s ", key)
-						log.debug("value %s ", val)
+						
+						unitsCql = key+"="+"\'"+val+"\'"
+						log.debug("unitsCql %o ", unitsCql);
 
-						cqlFilter = key+":="+"\'"+val+"\'"
+					} 
 
+					if(speciesCql && unitsCql !==null){
+						cqlFilter=speciesCql+" and " + unitsCql
+					}else if(speciesCql !==null){
+						cqlFilter = speciesCql  
+					}else if(unitsCql !==null){
+						sqlFilter = unitsCql 
+					}else{
+						cqlFilter = "species='moose'";
 					}
 
-
 					that.options.wmsLayer.setParams({
-						//CQL_FILTER:'unit='+ "\'"+data.label/*.toLowerCase()*/+"\'"
 						CQL_FILTER:cqlFilter
 					})	
-
-				})
+					
+				})		
 				
 			})
 
 		},
+
+
 
 		showSuccesFilter:function(data){
 			var that =this;

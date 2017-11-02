@@ -50,9 +50,9 @@ module.exports = Backbone.Marionette.CompositeView.extend({
 			FilterModel.set("unit",[])
 		}
 		 if((FilterModel.has("unit"))){
-				FilterModel.unset("unit",[])
-				FilterModel.set("unit", []);
-			} 
+			FilterModel.unset("unit",[])
+			FilterModel.set("unit", []);
+		} 
 			FilterModel.get("unit").push(model.label)
 		 this.trigger("hunt:filter", model);
 	},
