@@ -9,6 +9,7 @@ var RangeCompTmpl = require('draw-hunts/RangeCompTmpl.tmpl');
 var RangeItemTmpl = require('draw-hunts/RangeItemTmpl.tmpl');
 var SpeciesFiltersView = require('views/filters/SpeciesFilterView');
 var UnitsFilterView = require('views/filters/UnitsFilterView');
+var SummaryModalView = require('views/summary/SummaryView');
 //DrawyHuntsView
 module.exports = Backbone.Marionette.LayoutView.extend({
 	template:tmpl,
@@ -16,7 +17,8 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 
 	regions:{
 		map:"#map-container",
-		sidebar_container:"#sidebar-container"
+		sidebar_container:"#sidebar-container",
+		summary_modal:"#summary-modal",
 	},
 
 
@@ -53,6 +55,11 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 		log.debug("show map hehe %o ", that.options)
 		var map_view = new MapView(that.options)
 		that.getRegion('map').show(map_view);
+
+		map_view.on('hunt:summary',function(lat){
+			that.getRegion('summary_modal').show(new SummaryModalView())
+		})
+
 		
 	},
 
@@ -75,7 +82,15 @@ var MapView = Marionette.View.extend({
 	id:'map',
 	template:MapViewTmpl,
 
-	onShow:function(){
+	events:{
+		'click':'getSummary'
+	},
+
+	getSummary: function(){
+		this.trigger('hunt:summary')
+	},
+
+	onShow:function(){	
 		var that = this;
 		
 		that.options.map = L.map('map',{
@@ -97,6 +112,16 @@ var MapView = Marionette.View.extend({
 			});
 			that.options.map.addLayer(basemap)
 			that.options.map.addLayer(that.options.wmsLayer)
+			var lat
+			var lon
+
+			that.options.map.on('click',function(e){
+				lat = e.latlng.lat;
+				lon = e.latlng.lon;
+				
+				
+			})
+
 			log.debug("has it o: ", that.options.map.hasLayer(that.options.wmsLayer))
 			log.debug("map options %o ",that.options)
 	},

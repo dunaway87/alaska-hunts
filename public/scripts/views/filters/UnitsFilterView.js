@@ -36,7 +36,7 @@ module.exports = Backbone.Marionette.CompositeView.extend({
     		width: 'auto',
 			placeholder:"Select Unit",
 					
-			minimumResultsForSearch: 99,
+			minimumResultsForSearch: 0,
 		})
 
 

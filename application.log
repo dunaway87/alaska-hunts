@@ -7290,3 +7290,491 @@ Caused by: java.lang.NullPointerException
 02:48:55,481 INFO  ~ initView route: drawHunts
 02:49:43,152 INFO  ~ initView route: drawHunts
 02:50:31,398 INFO  ~ initView route: drawHunts
+02:56:24,735 INFO  ~ initView route: drawHunts
+02:58:45,754 INFO  ~ initView route: drawHunts
+02:58:53,364 INFO  ~ initView route: drawHunts
+02:59:02,154 INFO  ~ initView route: drawHunts
+07:02:44,805 INFO  ~ Starting /home/jordan/projects/alaska-hunts
+07:02:45,267 WARN  ~ You're running Play! in DEV mode
+07:02:45,350 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+07:02:49,046 INFO  ~ Application 'alaska-hunts' is now started !
+07:02:49,103 INFO  ~ initView route: drawHunts
+07:11:32,171 INFO  ~ initView route: drawHunts
+07:21:08,107 INFO  ~ initView route: drawHunts
+07:27:15,819 INFO  ~ initView route: drawHunts
+07:27:47,761 INFO  ~ initView route: drawHunts
+07:29:17,086 INFO  ~ initView route: drawHunts
+07:29:34,647 INFO  ~ initView route: drawHunts
+07:30:08,085 INFO  ~ initView route: drawHunts
+07:31:17,340 INFO  ~ initView route: drawHunts
+07:32:02,816 INFO  ~ initView route: drawHunts
+07:32:10,543 INFO  ~ initView route: drawHunts
+07:32:21,009 INFO  ~ error making connection!!! org.postgresql.util.PSQLException: The connection attempt failed.
+07:32:21,010 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Species.getFilter(Species.java:31)
+	at api.filters.Filters.getFilters(Filters.java:26)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+07:32:21,012 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Unit.getUnitFilter(Unit.java:55)
+	at api.filters.Filters.getFilters(Filters.java:27)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+07:32:21,013 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Unit.getSubunitFilter(Unit.java:28)
+	at api.filters.Filters.getFilters(Filters.java:28)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+07:32:21,013 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Residency.getFilter(Residency.java:28)
+	at api.filters.Filters.getFilters(Filters.java:31)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+07:32:21,049 ERROR ~ 
+
+@75on2457e
+Internal Server Error (500) for request GET /api/hunts/filters
+
+Execution exception (In /app/api/filters/Filters.java around line 34)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at api.filters.Filters.getFilters(Filters.java:34)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+07:35:52,864 INFO  ~ Starting /home/jordan/projects/alaska-hunts
+07:35:53,357 WARN  ~ You're running Play! in DEV mode
+07:35:53,443 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+07:36:05,055 INFO  ~ Application 'alaska-hunts' is now started !
+07:36:05,146 INFO  ~ initView route: drawHunts
+07:36:20,629 INFO  ~ initView route: drawHunts
+07:37:40,893 INFO  ~ initView route: drawHunts
+07:39:47,694 INFO  ~ initView route: drawHunts
+07:39:59,151 INFO  ~ initView route: drawHunts
+07:41:56,027 INFO  ~ initView route: drawHunts
+07:42:49,550 INFO  ~ initView route: drawHunts
+07:43:17,262 INFO  ~ initView route: drawHunts
+07:44:09,704 INFO  ~ initView route: drawHunts
+07:44:44,895 INFO  ~ initView route: drawHunts
+07:45:16,433 INFO  ~ initView route: drawHunts
+07:46:19,131 INFO  ~ initView route: drawHunts
+07:49:54,551 INFO  ~ initView route: drawHunts
+07:52:44,577 INFO  ~ initView route: drawHunts
+07:52:58,726 INFO  ~ initView route: drawHunts
+07:53:39,749 INFO  ~ initView route: drawHunts
+07:53:58,998 INFO  ~ initView route: drawHunts
+08:01:18,380 INFO  ~ initView route: drawHunts
+08:01:32,207 INFO  ~ initView route: drawHunts
+08:01:43,371 INFO  ~ initView route: drawHunts
+08:03:08,194 INFO  ~ initView route: drawHunts
+20:43:36,699 INFO  ~ Starting /home/jordan/projects/alaska-hunts
+20:43:37,143 WARN  ~ You're running Play! in DEV mode
+20:43:37,222 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+20:43:58,707 INFO  ~ Application 'alaska-hunts' is now started !
+20:43:58,785 INFO  ~ initView route: drawHunts
+20:44:15,325 INFO  ~ error making connection!!! org.postgresql.util.PSQLException: The connection attempt failed.
+20:44:15,337 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Species.getFilter(Species.java:31)
+	at api.filters.Filters.getFilters(Filters.java:26)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+20:44:15,342 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Unit.getUnitFilter(Unit.java:55)
+	at api.filters.Filters.getFilters(Filters.java:27)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+20:44:15,343 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Unit.getSubunitFilter(Unit.java:28)
+	at api.filters.Filters.getFilters(Filters.java:28)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+20:44:15,344 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Residency.getFilter(Residency.java:28)
+	at api.filters.Filters.getFilters(Filters.java:31)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+20:44:15,384 ERROR ~ 
+
+@75p123ejl
+Internal Server Error (500) for request GET /api/hunts/filters
+
+Execution exception (In /app/api/filters/Filters.java around line 34)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at api.filters.Filters.getFilters(Filters.java:34)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+20:44:49,675 INFO  ~ initView route: drawHunts
+20:45:13,501 INFO  ~ initView route: drawHunts
+21:03:44,896 INFO  ~ initView route: drawHunts
+21:07:30,342 INFO  ~ initView route: drawHunts
+21:07:40,711 INFO  ~ error making connection!!! org.postgresql.util.PSQLException: The connection attempt failed.
+21:07:40,712 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Species.getFilter(Species.java:31)
+	at api.filters.Filters.getFilters(Filters.java:26)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+21:07:40,712 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Unit.getUnitFilter(Unit.java:55)
+	at api.filters.Filters.getFilters(Filters.java:27)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+21:07:40,713 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Unit.getSubunitFilter(Unit.java:28)
+	at api.filters.Filters.getFilters(Filters.java:28)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+21:07:40,713 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Residency.getFilter(Residency.java:28)
+	at api.filters.Filters.getFilters(Filters.java:31)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+21:07:40,718 ERROR ~ 
+
+@75p123ejm
+Internal Server Error (500) for request GET /api/hunts/filters
+
+Execution exception (In /app/api/filters/Filters.java around line 34)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at api.filters.Filters.getFilters(Filters.java:34)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+23:13:06,818 INFO  ~ initView route: drawHunts
+14:12:37,117 INFO  ~ Starting /home/jordan/projects/alaska-hunts
+14:12:37,655 WARN  ~ You're running Play! in DEV mode
+14:12:37,744 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+14:12:52,663 INFO  ~ Application 'alaska-hunts' is now started !
+14:12:52,756 INFO  ~ initView route: drawHunts
+14:15:13,904 INFO  ~ initView route: drawHunts
+22:53:39,406 INFO  ~ initView route: drawHunts
+22:53:49,866 INFO  ~ error making connection!!! org.postgresql.util.PSQLException: The connection attempt failed.
+22:53:49,868 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Species.getFilter(Species.java:31)
+	at api.filters.Filters.getFilters(Filters.java:26)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+22:53:49,872 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Unit.getUnitFilter(Unit.java:55)
+	at api.filters.Filters.getFilters(Filters.java:27)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+22:53:49,873 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Unit.getSubunitFilter(Unit.java:28)
+	at api.filters.Filters.getFilters(Filters.java:28)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+22:53:49,873 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Residency.getFilter(Residency.java:28)
+	at api.filters.Filters.getFilters(Filters.java:31)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+22:53:49,910 ERROR ~ 
+
+@75p905i52
+Internal Server Error (500) for request GET /api/hunts/filters
+
+Execution exception (In /app/api/filters/Filters.java around line 34)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at api.filters.Filters.getFilters(Filters.java:34)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+22:54:04,187 INFO  ~ initView route: drawHunts
+22:54:14,479 INFO  ~ error making connection!!! org.postgresql.util.PSQLException: The connection attempt failed.
+22:54:14,480 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Species.getFilter(Species.java:31)
+	at api.filters.Filters.getFilters(Filters.java:26)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+22:54:14,481 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Unit.getUnitFilter(Unit.java:55)
+	at api.filters.Filters.getFilters(Filters.java:27)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+22:54:14,482 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Unit.getSubunitFilter(Unit.java:28)
+	at api.filters.Filters.getFilters(Filters.java:28)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+22:54:14,483 ERROR ~ Error getting species filter
+java.lang.NullPointerException
+	at api.filters.types.Residency.getFilter(Residency.java:28)
+	at api.filters.Filters.getFilters(Filters.java:31)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+22:54:14,487 ERROR ~ 
+
+@75p905i53
+Internal Server Error (500) for request GET /api/hunts/filters
+
+Execution exception (In /app/api/filters/Filters.java around line 34)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at api.filters.Filters.getFilters(Filters.java:34)
+	at controllers.Application.getFilters(Application.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+23:08:42,931 ERROR ~ 
+
+@75p905i54
+Internal Server Error (500) for request GET /drawHunts
+
+Compilation error (In /app/controllers/Application.java around line 44)
+The file /app/controllers/Application.java could not be compiled. Error raised is : The method getUnitData(String) in the type UnitData is not applicable for the arguments ()
+
+play.exceptions.CompilationException: The method getUnitData(String) in the type UnitData is not applicable for the arguments ()
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:676)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:520)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:281)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:324)
+	at play.Play.detectChanges(Play.java:635)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+19:59:55,631 INFO  ~ initView route: drawHunts
+20:02:22,906 INFO  ~ initView route: drawHunts
+20:03:35,083 INFO  ~ Starting /home/jordan/projects/alaska-hunts
+20:03:35,513 WARN  ~ You're running Play! in DEV mode
+20:03:35,585 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+20:03:48,161 INFO  ~ Application 'alaska-hunts' is now started !
+20:03:48,240 INFO  ~ initView route: drawHunts
+20:03:49,210 INFO  ~ initView route: drawHunts
+20:05:49,754 INFO  ~ initView route: drawHunts
+20:20:07,301 ERROR ~ 
+
+@761048edc
+Internal Server Error (500) for request GET /drawHunts
+
+Compilation error (In /app/controllers/Application.java around line 18)
+The file /app/controllers/Application.java could not be compiled. Error raised is : The import api.unit.UnitData cannot be resolved
+
+play.exceptions.CompilationException: The import api.unit.UnitData cannot be resolved
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:676)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:520)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:426)
+	at play.Play.start(Play.java:526)
+	at play.Play.detectChanges(Play.java:652)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+20:20:41,672 INFO  ~ initView route: drawHunts
+20:22:50,170 INFO  ~ initView route: drawHunts
+20:23:18,854 INFO  ~ initView route: drawHunts
+20:31:01,551 INFO  ~ initView route: drawHunts
+20:32:33,649 INFO  ~ initView route: drawHunts
+20:33:27,159 INFO  ~ initView route: drawHunts
+20:42:09,401 INFO  ~ initView route: drawHunts
+20:47:42,103 INFO  ~ initView route: drawHunts
+20:57:15,238 INFO  ~ initView route: drawHunts
+20:57:30,117 INFO  ~ initView route: drawHunts
+20:57:45,686 INFO  ~ initView route: drawHunts
+20:58:13,373 INFO  ~ initView route: drawHunts
+20:58:43,696 INFO  ~ initView route: drawHunts
+20:59:07,112 INFO  ~ initView route: drawHunts
+21:00:24,250 INFO  ~ initView route: drawHunts
+21:04:09,019 INFO  ~ initView route: drawHunts
+21:04:44,401 INFO  ~ initView route: drawHunts
+21:06:07,836 INFO  ~ initView route: drawHunts
+21:10:43,531 INFO  ~ initView route: drawHunts
+21:10:51,191 INFO  ~ initView route: drawHunts
+21:11:25,307 INFO  ~ initView route: drawHunts
+21:11:56,851 INFO  ~ initView route: drawHunts
+21:14:30,409 INFO  ~ initView route: drawHunts
+21:15:32,121 INFO  ~ initView route: drawHunts
+21:16:48,737 INFO  ~ initView route: drawHunts
+21:17:42,150 INFO  ~ initView route: drawHunts
+21:19:04,724 INFO  ~ initView route: drawHunts
+21:19:29,123 INFO  ~ initView route: drawHunts
+21:22:02,506 INFO  ~ initView route: drawHunts
+21:22:25,585 INFO  ~ initView route: drawHunts
+21:22:29,851 INFO  ~ initView route: drawHunts
+21:23:01,873 INFO  ~ initView route: drawHunts
+21:24:22,809 INFO  ~ initView route: drawHunts
+21:25:11,775 INFO  ~ initView route: drawHunts
+21:26:45,131 INFO  ~ initView route: drawHunts
+21:27:14,479 INFO  ~ initView route: drawHunts
+21:27:33,891 INFO  ~ initView route: drawHunts
+21:27:59,665 INFO  ~ initView route: drawHunts
+21:33:44,223 INFO  ~ initView route: drawHunts
+21:35:32,833 INFO  ~ initView route: drawHunts
+21:35:57,554 INFO  ~ initView route: drawHunts
+21:41:26,732 INFO  ~ initView route: drawHunts
+21:42:30,395 INFO  ~ initView route: drawHunts
+21:43:30,752 INFO  ~ initView route: drawHunts
+21:43:48,565 INFO  ~ initView route: drawHunts
+20:21:09,179 INFO  ~ Starting /home/jordan/projects/alaska-hunts
+20:21:09,689 WARN  ~ You're running Play! in DEV mode
+20:21:09,758 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+20:21:21,460 INFO  ~ Application 'alaska-hunts' is now started !
+20:21:21,536 INFO  ~ initView route: drawHunts
+20:21:59,553 INFO  ~ initView route: drawHunts
+20:24:46,563 INFO  ~ initView route: drawHunts
+20:25:09,676 INFO  ~ initView route: drawHunts
+20:25:31,843 INFO  ~ initView route: drawHunts
+20:25:46,381 INFO  ~ initView route: drawHunts
+08:18:29,677 INFO  ~ initView route: drawHunts

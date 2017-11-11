@@ -23,9 +23,7 @@ module.exports = Backbone.Marionette.CompositeView.extend({
 	},
 
 	onShow: function(){
-		var that = this;
-		log.debug("comp twice")
-			
+		var that = this;		
 		
 		
 		var select = this.$el.select();

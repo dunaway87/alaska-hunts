@@ -14,6 +14,9 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
 import api.filters.Filters;
+import api.filters.types.Unit;
+
+
 import models.*;
 
 public class Application extends Controller {
@@ -27,15 +30,17 @@ public class Application extends Controller {
 	}
 
 	public static void getFilters(){
-		
-			JsonObject filters = Filters.getFilters();
-			
-			
-			
-			renderJSON(filters.toString());
-		}
+
+		JsonObject filters = Filters.getFilters();
+
+
+
+		renderJSON(filters.toString());
 	}
-		/*Connection conn = new DatabaseUtils().getConnection();
+
+
+}
+/*Connection conn = new DatabaseUtils().getConnection();
 		String speciesSQL = SQL.GETSPECIES;
 		JsonArray species = new JsonArray();
 

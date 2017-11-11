@@ -72,9 +72,12 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 					
 					}
 					log.debug("species filters %o ",FilterModel.toJSON());
-					that.options.speciesFilter=data.label;
+					
+
+
 					speciesCql= key+"="+"\'"+val.toLowerCase()+"\'"
-					log.debug("unitsCql %o ", unitsCql)
+					log.debug("speciesCql %o ", speciesCql)
+					
 
 					if(speciesCql && unitsCql && subunitsCql !==null){
 						cqlFilter=speciesCql+" and "+unitsCql+" and "+subunitsCql
@@ -87,12 +90,13 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 					}else if(subunitsCql !==null){
 						cqlFilter = subunitsCql 
 					}else{
-						cqlFilter = "species='moose'";
+						cqlFilter = null;
 					}
 
 					that.options.wmsLayer.setParams({
 						CQL_FILTER:cqlFilter
 					})	
+					
 					/*that.options.wmsLayer.setParams({
 						CQL_FILTER:'species='+ "\'"+data.label.toLowerCase()+"\'"
 						
@@ -115,6 +119,7 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 						
 						unitsCql = key+"="+"\'"+val+"\'"
 						log.debug("unitsCql %o ", unitsCql);
+						
 
 					} 
 
@@ -151,6 +156,7 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 						}
 						
 						subunitsCql = key+"="+"\'"+val+"\'"
+						
 						log.debug("subunitsCql %o ", subunitsCql);
 
 					} 
@@ -179,7 +185,15 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 
 		},
 
-
+		addOriginalWms: function(speciesCql){
+			var that = this;
+			log.debug("hehesa")
+			speciesCql=null;
+			if(FilterModel.has("species")){
+				FilterModel.unset("species", [])
+			}
+			that.options.wmsLayer.resetParams()
+		},
 
 		showSuccesFilter:function(data){
 			var that =this;
