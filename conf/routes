@@ -12,6 +12,7 @@ GET     /filters								Application.getFilters
 
 GET 	/api/hunts/filters						Application.getFilters
 
+GET		/pointData								Application.getPointData
 
 #GET		/api/example/filters                    Example.getFilters
 #GET		/api/example/artists                    Example.getArtists

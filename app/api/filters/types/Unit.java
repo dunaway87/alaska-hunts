@@ -21,6 +21,7 @@ public class Unit {
 	public static JsonElement getSubunitFilter(Connection conn){
 		JsonObject filter = new JsonObject();
 		filter.addProperty("label", "Subunit");
+		filter.addProperty("parameter", "subunit");
 		filter.addProperty("type", "qualitative");
 		filter.addProperty("selector", "and");
 		JsonArray range = new JsonArray();
@@ -48,6 +49,8 @@ public class Unit {
 	public static JsonElement getUnitFilter(Connection conn) {
 		JsonObject filter = new JsonObject();
 		filter.addProperty("label", "Unit");
+		filter.addProperty("parameter", "unit");
+
 		filter.addProperty("type", "qualitative");
 		filter.addProperty("selector", "and");
 		JsonArray range = new JsonArray();
