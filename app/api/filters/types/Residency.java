@@ -21,6 +21,7 @@ public class Residency {
 	public static JsonElement getFilter(Connection conn) {
 		JsonObject filter = new JsonObject();
 		filter.addProperty("label", "Residency");
+		filter.addProperty("parameter", "residency");
 		filter.addProperty("type", "qualitative");
 		filter.addProperty("selector", "and");
 		JsonArray range = new JsonArray();

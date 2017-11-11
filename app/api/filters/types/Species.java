@@ -24,6 +24,7 @@ public class Species extends GenericFilter{
 	public static JsonElement getFilter(Connection conn) {
 		JsonObject filter = new JsonObject();
 		filter.addProperty("label", "Species");
+		filter.addProperty("parameter", "species");
 		filter.addProperty("type", "qualitative");
 		filter.addProperty("selector", "or");
 		JsonArray range = new JsonArray();
@@ -50,6 +51,7 @@ public class Species extends GenericFilter{
 					
 				}
 				subFilter.addProperty("Label", "Legal Animal");
+				subFilter.addProperty("parameter", "legalAnimal");
 				subFilter.add("range", subRange);
 				item.add("subfilter", subFilter);
 				

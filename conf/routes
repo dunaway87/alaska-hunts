@@ -12,9 +12,10 @@ GET     /filters								Application.getFilters
 
 GET 	/api/hunts/filters						Application.getFilters
 
+GET		/pointData								Application.getPointData
 
 
-
+GET		/pointData								Application.getPointData
 
 
 # Ignore favicon requests

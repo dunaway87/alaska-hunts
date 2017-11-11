@@ -17,6 +17,7 @@ public class Rates {
 	private static JsonObject getRateFilter(Connection conn, String label){
 		JsonObject filter = new JsonObject();
 		filter.addProperty("label", label);
+		filter.addProperty("parameter", label.toLowerCase().replace(" ", "_"));
 		filter.addProperty("type", "dual_slider");
 		
 		JsonObject range = new JsonObject();

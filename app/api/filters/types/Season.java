@@ -7,6 +7,7 @@ public class Season {
 	public static JsonElement getFilter() {
 		JsonObject filter = new JsonObject();
 		filter.addProperty("label", "Season");
+		filter.addProperty("parameter", "season");
 		filter.addProperty("type", "date");
 		filter.addProperty("selector", "date_slider");
 		

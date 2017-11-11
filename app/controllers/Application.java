@@ -2,6 +2,7 @@ package controllers;
 
 import play.*;
 import play.mvc.*;
+import play.vfs.VirtualFile;
 import utils.DatabaseUtils;
 
 import java.sql.Connection;
@@ -10,14 +11,23 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
+import org.geotools.geojson.geom.GeometryJSON;
 
+
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.vividsolutions.jts.geom.Geometry;
+import com.vividsolutions.jts.geom.GeometryFactory;
+import com.vividsolutions.jts.io.ParseException;
+import com.vividsolutions.jts.io.WKTReader;
+
+import api.PointData;
 import api.filters.Filters;
 import api.filters.types.Unit;
 
 
-import models.*;
 
 public class Application extends Controller {
 
@@ -37,37 +47,16 @@ public class Application extends Controller {
 
 		renderJSON(filters.toString());
 	}
+	public static void getPointData(double lat, double lon, String season, String unit, String subunit, String draw_rate, String hunt_success_rate, String residency, int legalAnimal, int species ){
+		JsonArray hunts = PointData.getData(lat,lon, season, unit, subunit, draw_rate, hunt_success_rate, residency, legalAnimal, species);
+
+		renderJSON(hunts);
+
+	}
 
 
 }
-/*Connection conn = new DatabaseUtils().getConnection();
-		String speciesSQL = SQL.GETSPECIES;
-		JsonArray species = new JsonArray();
 
-		try {
-			PreparedStatement pstmt = conn.prepareStatement(speciesSQL);
-			ResultSet rs = pstmt.executeQuery();
-			JsonObject obj = null;
-			int id = 0;
-			Logger.info("table sql %s ", speciesSQL);
-			while(rs.next()) {
-				obj = new JsonObject();
-				String specie = rs.getString(1);
-				obj.addProperty("id", id);
-				obj.addProperty("label", specie);
 
-				species.add(obj);
-				id ++;
-			}
-		} catch(Exception e) {
-			Logger.error(e, "Error with sql");
-		} finally {
-			try {
-				conn.close();
-			} catch (SQLException e) {
-				Logger.error(e, "Error closing connection");
-			}
-		}
-		renderJSON(species.toString());
+}
 
-	}*/
