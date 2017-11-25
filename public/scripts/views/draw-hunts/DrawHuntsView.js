@@ -55,9 +55,13 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 		log.debug("show map hehe %o ", that.options)
 		var map_view = new MapView(that.options)
 		that.getRegion('map').show(map_view);
+		
 
-		map_view.on('hunt:summary',function(lat){
-			that.getRegion('summary_modal').show(new SummaryModalView())
+		map_view.on('hunt:summary',function(data){
+			$('#summary-modal').show();
+			that.getRegion('summary_modal').show(new SummaryModalView({
+				model:data
+			}),{preventDestroy:true})
 		})
 
 		
@@ -82,13 +86,13 @@ var MapView = Marionette.View.extend({
 	id:'map',
 	template:MapViewTmpl,
 
-	events:{
-		'click':'getSummary'
+	/*events:{
+		'dblclick':'getSummary'
 	},
 
 	getSummary: function(){
 		this.trigger('hunt:summary')
-	},
+	},*/
 
 	onShow:function(){	
 		var that = this;
@@ -115,15 +119,33 @@ var MapView = Marionette.View.extend({
 			var lat
 			var lon
 
-			that.options.map.on('click',function(e){
+			that.options.map.on('dblclick',function(e){
+				log.debug("hehehs")
 				lat = e.latlng.lat;
-				lon = e.latlng.lon;
+				lon = e.latlng.lng;
 				
+				that.getPointData();
+				that.trigger('hunt:summary', that.options.summary_model);
+				console.log("lat %o ", lat);
+				console.log("lon %o ", lon);
 				
 			})
 
 			log.debug("has it o: ", that.options.map.hasLayer(that.options.wmsLayer))
 			log.debug("map options %o ",that.options)
+	},
+
+	getPointData: function(){
+		var that = this;
+		var url = "http://localhost:9000/pointData?lat=63.05993718178895&lon=-146.14013671875003";
+		$.getJSON(url,function(data){
+			log.debug("data %o ", data)
+			that.options.summary_model = new Backbone.Model({
+				model:data
+			})
+		
+			console.log("hunt sum data %o ", that.options.summary_model);
+		})
 	},
 
 	initialize:function(options){

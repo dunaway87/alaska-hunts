@@ -2,6 +2,7 @@ var RangeCompTmpl = require('draw-hunts/RangeCompTmpl.tmpl');
 var RangeItemTmpl = require('draw-hunts/RangeItemTmpl.tmpl');
 var FilterModel = require('models/FilterModel');
 
+
 var SpeciesRangeItemView = Backbone.Marionette.ItemView.extend({
 	template:RangeItemTmpl,
 	tagName:"option",
@@ -71,5 +72,9 @@ module.exports = Backbone.Marionette.CompositeView.extend({
 		//log.debug("trying to get species % ", this.options)
 		
 	}
+
+})
+
+var MapView = Marionette.View.extend({
 
 })
