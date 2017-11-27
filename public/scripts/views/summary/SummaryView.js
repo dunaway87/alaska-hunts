@@ -5,6 +5,7 @@ var header_tmpl = require('draw-hunts/ModalHeader.tmpl');
 var footer_tmpl = require('draw-hunts/ModalFooter.tmpl');
 var modal_map_tmpl = require('draw-hunts/ModalMapView.tmpl');
 var hunt_item_tmpl = require('draw-hunts/HuntItem.tmpl');
+var hunt_comp_tmpl =require('draw-hunts/HuntComp.tmpl');
 //var modal_hunts_tmpl = require('draw-hunts/ModalHunts.tmpl');
 //var modal_hunt_summary_tmpl = require('draw-hunts/ModalHuntSummary.tmpl');
 
@@ -43,7 +44,7 @@ module.exports = Marionette.LayoutView.extend({
 		that.getRegion('modal_header').show(modal_header_view);
 		modal_header_view.on('close:modal', function(){
 			console.log("heheclose")
-			//this.trigger("close:modal");
+			that.trigger("shuttle:close");
 		})
 
 	},
@@ -53,6 +54,10 @@ module.exports = Marionette.LayoutView.extend({
 
 		var modal_footer_view = new ModalFooterView();
 		that.getRegion('modal_footer').show(modal_footer_view);
+		modal_footer_view.on('close:modal', function(){
+			console.log("heheclose")
+			that.trigger("shuttle:close");
+		})
 	},
 
 	showModalMap:function(){
@@ -112,12 +117,14 @@ var ModalHeaderView = Backbone.Marionette.ItemView.extend({
 	template:header_tmpl,
 
 	triggers:{
-		"click .header-closer": "close:modal",
+		"click .close": "close:modal",
 	},
 
-	closeModal:function(e){
-		e.preventDefault();
-		e.stopPropagation();
+	closeModal:function(){
+		var that = this;
+		/*e.preventDefault();
+		e.stopPropagation();*/
+		console.log("close it down")
 		this.trigger("close:modal")
 	}
 });
@@ -132,7 +139,7 @@ var ModalFooterView = Backbone.Marionette.ItemView.extend({
 	closeModal:function(e){
 		e.preventDefault();
 		e.stopPropagation();
-		 this.$el.modal('hide');
+		 
 		this.trigger("close:modal")
 	}
 })
@@ -152,7 +159,7 @@ var HuntItem = Backbone.Marionette.ItemView.extend({
 			species:properties
 
 		}
-		console.log("label %s ", label)
+		
 	}
 
 	
@@ -162,7 +169,7 @@ var ModalHunts = Backbone.Marionette.CompositeView.extend({
 
 	tagName:"table",
 	className:"table table-hover",
-	template:"<tbody><tr><tr></tbody>",
+	template:hunt_comp_tmpl,
 	childView: HuntItem,
 
 	onShow:function(){

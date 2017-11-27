@@ -9981,3 +9981,281 @@ join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = 
 
 where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.42529296875003,61.312451574838214),4326),3338))  order by hunt desc
 
+22:26:41,739 INFO  ~ initView route: drawHunts
+22:26:55,159 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-149.56787109375003,63.074865690586634),4326),3338))  order by hunt desc
+
+22:27:12,483 INFO  ~ initView route: drawHunts
+22:27:24,228 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-144.62402343750003,64.28275952823397),4326),3338))  order by hunt desc
+
+22:27:28,780 INFO  ~ initView route: drawHunts
+22:27:36,095 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-154.07226562500003,62.83508901142283),4326),3338))  order by hunt desc
+
+22:27:41,745 INFO  ~ initView route: drawHunts
+22:27:47,878 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-145.19531250000003,64.20637724320852),4326),3338))  order by hunt desc
+
+22:27:53,106 INFO  ~ initView route: drawHunts
+22:28:00,955 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-154.51171875,62.99515845212052),4326),3338))  order by hunt desc
+
+07:48:02,152 INFO  ~ initView route: drawHunts
+07:48:10,229 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.79882812500003,69.25614923150721),4326),3338))  order by hunt desc
+
+07:49:49,314 INFO  ~ initView route: drawHunts
+07:49:53,919 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-149.06250000000003,68.97416358340674),4326),3338))  order by hunt desc
+
+07:50:09,407 INFO  ~ initView route: drawHunts
+07:50:15,594 INFO  ~ initView route: drawHunts
+07:50:20,200 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.18359375000003,69.3493386397765),4326),3338))  order by hunt desc
+
+07:51:20,432 INFO  ~ initView route: drawHunts
+07:51:33,222 INFO  ~ initView route: drawHunts
+07:51:44,554 INFO  ~ initView route: drawHunts
+07:51:57,902 INFO  ~ initView route: drawHunts
+07:52:02,374 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.71093750000003,69.19379976461904),4326),3338))  order by hunt desc
+
+07:53:35,747 INFO  ~ initView route: drawHunts
+07:53:40,036 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.79882812500003,68.97416358340674),4326),3338))  order by hunt desc
+
+07:53:47,885 INFO  ~ initView route: drawHunts
+07:53:52,101 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.44726562500003,63.15435519659187),4326),3338))  order by hunt desc
+
+07:55:17,392 INFO  ~ initView route: drawHunts
+07:55:33,174 INFO  ~ initView route: drawHunts
+07:55:48,193 INFO  ~ initView route: drawHunts
+07:55:51,848 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.62304687500003,69.03714171275197),4326),3338))  order by hunt desc
+
+07:56:36,448 INFO  ~ initView route: drawHunts
+07:57:07,575 INFO  ~ initView route: drawHunts
+07:57:18,062 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-152.50122070312503,57.610107020683905),4326),3338))  order by hunt desc
+
+07:58:14,544 INFO  ~ initView route: drawHunts
+07:58:17,816 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-160.83984375000003,68.33437594128185),4326),3338))  order by hunt desc
+
+07:59:34,337 INFO  ~ initView route: drawHunts
+07:59:38,838 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.88671875000003,68.9110048456202),4326),3338))  order by hunt desc
+
+08:00:28,742 INFO  ~ initView route: drawHunts
+08:00:41,085 INFO  ~ initView route: drawHunts
+08:01:35,988 INFO  ~ initView route: drawHunts
+08:01:41,742 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-134.64843750000003,57.79794388498275),4326),3338))  order by hunt desc
+
+08:02:24,445 INFO  ~ initView route: drawHunts
+08:02:28,244 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.18359375000003,69.03714171275197),4326),3338))  order by hunt desc
+
+08:02:50,770 INFO  ~ initView route: drawHunts
+08:02:52,470 INFO  ~ initView route: drawHunts
+08:02:59,972 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.62304687500003,69.19379976461904),4326),3338))  order by hunt desc
+
+08:03:33,734 INFO  ~ initView route: drawHunts
+08:03:36,489 INFO  ~ initView route: drawHunts
+08:03:42,132 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-149.50195312500003,69.4421276134176),4326),3338))  order by hunt desc
+
+08:04:05,234 INFO  ~ initView route: drawHunts
+08:04:09,450 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-149.15039062500003,68.97416358340674),4326),3338))  order by hunt desc
+
+08:04:42,105 INFO  ~ initView route: drawHunts
+08:04:45,400 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-149.76562500000003,69.50376519563686),4326),3338))  order by hunt desc
+
+08:04:59,705 INFO  ~ initView route: drawHunts
+08:05:07,499 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.35937500000003,69.71810669906763),4326),3338))  order by hunt desc
+
+08:05:18,847 INFO  ~ initView route: drawHunts
+08:05:24,247 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.35937500000003,69.28725695167886),4326),3338))  order by hunt desc
+
+08:05:58,638 INFO  ~ initView route: drawHunts
+08:06:03,380 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.00781250000003,69.31832006949072),4326),3338))  order by hunt desc
+
+08:06:55,387 INFO  ~ initView route: drawHunts
+08:07:04,487 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-147.56835937500003,69.3493386397765),4326),3338))  order by hunt desc
+
+08:07:20,089 INFO  ~ initView route: drawHunts
+08:07:53,656 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.09570312500003,69.25614923150721),4326),3338))  order by hunt desc
+
+08:08:22,533 INFO  ~ initView route: drawHunts
+08:08:26,499 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-149.76562500000003,68.97416358340674),4326),3338))  order by hunt desc
+
+08:09:51,110 INFO  ~ initView route: drawHunts
+08:09:57,552 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.79882812500003,69.68761843185617),4326),3338))  order by hunt desc
+
+08:10:03,025 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.62304687500003,62.87518837993309),4326),3338))  order by hunt desc
+
+08:10:41,972 INFO  ~ initView route: drawHunts
+08:10:47,552 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-148.18359375000003,69.50376519563686),4326),3338))  order by hunt desc
+
+08:10:52,332 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-155.25878906250003,62.81501879409271),4326),3338))  order by hunt desc
+
+08:11:09,849 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-135.47241210937503,57.14220049628788),4326),3338))  order by hunt desc
+
+08:11:20,663 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-160.04882812500003,59.377988012638916),4326),3338))  order by hunt desc
+
+08:11:26,840 INFO  ~ Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species
+join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
+
+
+where st_contains(geom, st_transform(ST_SetSrid(ST_Point(-164.37744140625003,54.82600799909498),4326),3338))  order by hunt desc
+
