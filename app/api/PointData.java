@@ -23,10 +23,11 @@ import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.io.WKTReader;
 
 public class PointData {
-	public static JsonArray getData(double lat, double lon, String seasonFilter, String unitFilter, String subunitFilter, String draw_rateFilter, String hunt_success_rateFilter, String residencyFilter, int legalAnimalFilter, int speciesFilter){
+	public static JsonElement getData(double lat, double lon, String seasonFilter, String unitFilter, String subunitFilter, String draw_rateFilter, String hunt_success_rateFilter, String residencyFilter, int legalAnimalFilter, int speciesFilter){
 		Connection conn = new DatabaseUtils().getConnection();
 
-		JsonArray hunts = new JsonArray();
+		JsonObject hunts = new JsonObject();
+		JsonArray huntsArray = new JsonArray();
 		String sql = VirtualFile.fromRelativePath("app/sql/getPointData.sql").contentAsString();	
 		
 		String whereClause = getWhereClause(speciesFilter, seasonFilter,unitFilter,subunitFilter,draw_rateFilter,hunt_success_rateFilter,residencyFilter, legalAnimalFilter);
@@ -55,7 +56,7 @@ public class PointData {
 
 				JsonObject hunt = new JsonObject();
 				
-				
+				JsonObject data = new JsonObject();
 				
 				
 				JsonArray properties = new JsonArray();
@@ -66,10 +67,13 @@ public class PointData {
 				properties.add(labelValue("Draw Rate", drawRate));
 				properties.add(labelValue("Harvest Success Rate", harvestSuccessRate));
 				properties.add(labelValue("Residency", residency));
+				
 				hunt.addProperty("label", huntId);
 				hunt.add("properties", properties);
 				hunt.add("geometry", getGeometry(polygon));
-				hunts.add(hunt);
+				data.add("data", hunt);
+				huntsArray.add(hunt);
+				hunts.add("data", huntsArray);
 			}
 			
 			
@@ -86,6 +90,7 @@ public class PointData {
 				e.printStackTrace();
 			}
 		}
+		
 		return hunts;
 	}
 	

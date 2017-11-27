@@ -4,6 +4,7 @@ var tmpl = require('draw-hunts/SummaryView.tmpl');
 var header_tmpl = require('draw-hunts/ModalHeader.tmpl');
 var footer_tmpl = require('draw-hunts/ModalFooter.tmpl');
 var modal_map_tmpl = require('draw-hunts/ModalMapView.tmpl');
+var hunt_item_tmpl = require('draw-hunts/HuntItem.tmpl');
 //var modal_hunts_tmpl = require('draw-hunts/ModalHunts.tmpl');
 //var modal_hunt_summary_tmpl = require('draw-hunts/ModalHuntSummary.tmpl');
 
@@ -25,6 +26,7 @@ module.exports = Marionette.LayoutView.extend({
 			require("leaflet/leaflet.js");
 			require("leaflet/leaflet-src.js");
 		});
+		this.options.data = {}
 
 		this.showModalHeader();
 		this.showModalFooter();
@@ -39,6 +41,11 @@ module.exports = Marionette.LayoutView.extend({
 		var modal_header_view = new ModalHeaderView();
 
 		that.getRegion('modal_header').show(modal_header_view);
+		modal_header_view.on('close:modal', function(){
+			console.log("heheclose")
+			//this.trigger("close:modal");
+		})
+
 	},
 
 	showModalFooter: function(){
@@ -50,12 +57,48 @@ module.exports = Marionette.LayoutView.extend({
 
 	showModalMap:function(){
 		var that = this;
-		console.log("hehe")
+		
 		that.getRegion('modal_map').show(new MapView())
 	},
 
 	showHunts:function(){
+		var that = this;
+		var lat = this.options.model.attributes.lat;
+		var lon = this.options.model.attributes.lon;
+
+		var url = "http://localhost:9000/pointData?lat="+lat+"&lon="+lon;
+		console.log(url);
+
+
+		var hunt_model = Backbone.Model.extend({
+			urlRoot: url
+		});
+		console.log(hunt_model)
+		var HuntCollection = Backbone.Collection.extend({
+			url: url,
+			model: hunt_model,
+			parse: function(response, options) {
+    			return response.data;
+    			
+  			}
+
+
+		});	
+
+		
+		var collection = new HuntCollection();
+		collection.fetch().done(function(){
+			console.log("collection %o ", collection)
+			that.getRegion('modal_hunts').show(new ModalHunts({
+				collection:collection
+			}))
+		});
+
+		
+			
+			
 		console.log("hunts up %o ", this.options)
+
 	},
 
 	initialize: function(options){
@@ -89,9 +132,53 @@ var ModalFooterView = Backbone.Marionette.ItemView.extend({
 	closeModal:function(e){
 		e.preventDefault();
 		e.stopPropagation();
+		 this.$el.modal('hide');
 		this.trigger("close:modal")
 	}
 })
+
+
+
+var HuntItem = Backbone.Marionette.ItemView.extend({
+	template:hunt_item_tmpl,
+	tagName:"tr",
+	onShow: function(){
+		console.log("item model %o ", this.model)
+	},
+	serializeData: function(){
+		var properties = this.model.attributes.properties["0"].value;
+		return {
+			label:this.model.get("label"),
+			species:properties
+
+		}
+		console.log("label %s ", label)
+	}
+
+	
+})
+
+var ModalHunts = Backbone.Marionette.CompositeView.extend({
+
+	tagName:"table",
+	className:"table table-hover",
+	template:"<tbody><tr><tr></tbody>",
+	childView: HuntItem,
+
+	onShow:function(){
+		console.log("hehe")
+	},
+
+	initialize:function(options){
+		var that = this;
+		this.options = options
+		this.collection = new Backbone.Collection(this.options.collection.models)
+		console.log("hunt item %o ", this.options.collection.models)
+	
+	} 
+})
+
+
 
 var MapView = Marionette.View.extend({
 	id:'modal-map',

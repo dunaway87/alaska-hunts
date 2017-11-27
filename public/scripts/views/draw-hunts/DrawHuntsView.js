@@ -41,6 +41,7 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 		this.showSidebar(this.options);
 		this.showMap();
 
+
         
 
 	},
@@ -59,9 +60,13 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 
 		map_view.on('hunt:summary',function(data){
 			$('#summary-modal').show();
-			that.getRegion('summary_modal').show(new SummaryModalView({
+			var summary_modal_view = new SummaryModalView({
 				model:data
-			}),{preventDestroy:true})
+			})
+			that.getRegion('summary_modal').show(summary_modal_view,{preventDestroy:true})
+			summary_modal_view.on("childview:close:modal", function(childview,args){
+				that.getRegion('summary_modal').emptry({preventDestroy:true})
+			})
 		})
 
 		
@@ -123,9 +128,12 @@ var MapView = Marionette.View.extend({
 				log.debug("hehehs")
 				lat = e.latlng.lat;
 				lon = e.latlng.lng;
+				that.options.point_model=new Backbone.Model({
+					lat:lat,
+					lon:lon
+				})
 				
-				that.getPointData();
-				that.trigger('hunt:summary', that.options.summary_model);
+				that.trigger('hunt:summary', that.options.point_model);
 				console.log("lat %o ", lat);
 				console.log("lon %o ", lon);
 				
@@ -135,18 +143,7 @@ var MapView = Marionette.View.extend({
 			log.debug("map options %o ",that.options)
 	},
 
-	getPointData: function(){
-		var that = this;
-		var url = "http://localhost:9000/pointData?lat=63.05993718178895&lon=-146.14013671875003";
-		$.getJSON(url,function(data){
-			log.debug("data %o ", data)
-			that.options.summary_model = new Backbone.Model({
-				model:data
-			})
-		
-			console.log("hunt sum data %o ", that.options.summary_model);
-		})
-	},
+	
 
 	initialize:function(options){
 		this.options=options
