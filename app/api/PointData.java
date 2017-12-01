@@ -53,6 +53,7 @@ public class PointData {
 				String legalAnimal = rs.getString(7);
 				String unit = rs.getString(8);
 				String polygon = rs.getString(9);
+				String description = rs.getString(10);
 
 				JsonObject hunt = new JsonObject();
 				
@@ -67,6 +68,7 @@ public class PointData {
 				properties.add(labelValue("Draw Rate", drawRate));
 				properties.add(labelValue("Harvest Success Rate", harvestSuccessRate));
 				properties.add(labelValue("Residency", residency));
+				properties.add(labelValue("Descrption",description));
 				
 				hunt.addProperty("label", huntId);
 				hunt.add("properties", properties);

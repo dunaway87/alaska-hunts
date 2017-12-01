@@ -1,5 +1,5 @@
-Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)) from hunt.draw_hunt dh
-join hunt.species s on s.species = dh.species
+Select hunt, dh.species, draw_rate, harvest_success_rate, residency, season, dh.legal_animal, full_unit, st_asText(ST_transform(geom, 4326)),dh.description from hunt.draw_hunt dh
+join hunt.species s on s.species = dh.species 
 join hunt.legal_animal la on la.legal_animal = dh.legal_animal and la.species = dh.species
 
 

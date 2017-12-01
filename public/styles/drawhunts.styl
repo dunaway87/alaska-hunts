@@ -1,6 +1,6 @@
 
 #map{
-   position:absolute;
+   position:relative;
 	height:100%;
 	width:100%;
 }
@@ -11,20 +11,35 @@
 	height:100%;
 }
 #map-container{
-	position:absolute;
-	
-	
-	width:80%;
-	height:100%;; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
 }
 
 #sidebar-container{
-	background:#e0e0e0;
-	position:absolute;
-	right:0;
-	height:100%;
-	width:20%;
+    background: rgba(255,255,255,0.85);
+    position: absolute;
+	 right: 0;
+    height: 100%;
+    width: 350px;
+    z-index: 100;
+    
+    
 }
+
+.filters{
+	background: #f1f1f1;
+	margin: 20px;10px;10px;10px;
+	border-radius: 10px;
+
+
+}
+
+#filters-title{
+	padding-left:3%;
+}
+
 #species-container{
 	
 	position:relative;
@@ -54,6 +69,15 @@ select2-dropdown.select2-dropdown--below{
     position: relative;
 }
 
+
+.select2-container--default .select2-selection--single{
+    
+    height: 37px;
+    width: 200px; 
+    
+    
+}
+
 #successrate-container{
 	position:relative;
 	height:50px;
@@ -75,7 +99,7 @@ select2-dropdown.select2-dropdown--below{
 }
 
 .head-control{
-	padding-left:5%;
+	padding-left:8%;
 }
 
 
@@ -135,7 +159,7 @@ select2-dropdown.select2-dropdown--below{
   .modal-xl {
 
 
-   max-height:800px;
+   max-height:1500px;
   }
 }
 
@@ -146,15 +170,15 @@ select2-dropdown.select2-dropdown--below{
 }
 
 .modal-map-container{
-	position:absolute;
-	width:100%;
-	height:100%;
+	width: 100%;
+    height: 100%;
+    padding-bottom: 5%;
 }
 
 .modal-map-wrap{
-	position:absolute;
-	width:55%;
-	height:45%;
+	float: left;
+    width: 95%;
+    height: 50%;
 }
 
 .modal-header .close {
@@ -171,7 +195,36 @@ select2-dropdown.select2-dropdown--below{
 }
 
 .modal-hunts{
-	float:right;
-	width: 35%;
+	float: right;
+    width: 40%;
+    max-height: 100%;
+    overflow:auto;
+    padding-right: 100px;
+    padding-top: 50px;
 
+}
+
+.modal-hunt-summary{
+    
+    max-height: 40%;
+    width: 95%;
+    float: left;
+    clear: left;
+    overflow:auto;
+   
+}
+
+.wrap-map-summary{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    padding-left: 30px;
+
+
+}
+
+.hunt-modal-title-region{
+	width:25%;
+	height:7%;
+	float:left;
 }

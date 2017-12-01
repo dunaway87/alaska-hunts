@@ -6,6 +6,10 @@ var footer_tmpl = require('draw-hunts/ModalFooter.tmpl');
 var modal_map_tmpl = require('draw-hunts/ModalMapView.tmpl');
 var hunt_item_tmpl = require('draw-hunts/HuntItem.tmpl');
 var hunt_comp_tmpl =require('draw-hunts/HuntComp.tmpl');
+var hunt_summary_tmpl = require('draw-hunts/HuntSummary.tmpl');
+var hunt_summary_comp_tmpl = require('draw-hunts/HuntSummaryComp.tmpl');
+var hunt_title_tmpl = require('draw-hunts/HuntTitle.tmpl')
+
 //var modal_hunts_tmpl = require('draw-hunts/ModalHunts.tmpl');
 //var modal_hunt_summary_tmpl = require('draw-hunts/ModalHuntSummary.tmpl');
 
@@ -16,6 +20,7 @@ module.exports = Marionette.LayoutView.extend({
 	regions:{
 		modal_map:'.modal-map-container',
 		modal_hunts:'.modal-hunts',
+		modal_hunt_title:'.hunt-modal-title-region',
 		modal_hunt_summary:'.modal-hunt-summary',
 		modal_header:'#hunt-modal-header',
 		modal_footer:'#hunt-modal-footer',
@@ -103,9 +108,13 @@ module.exports = Marionette.LayoutView.extend({
 			})
 			that.getRegion('modal_hunts').show(modal_hunts)
 
+
 			modal_hunts.on("childview:show:huntsummary", function(childview,args){
 				console.log("hunt summary %o ", args)
 				var hunt_summary = new HuntSummaryView({
+					model:args
+				})
+				var hunt_title_view = new HuntModalTitle({
 					model:args
 				})
 				console.log("hunt args %o ", args.attributes.geometry)
@@ -119,12 +128,11 @@ module.exports = Marionette.LayoutView.extend({
 				that.options.map.addLayer(layergroup);
 				that.options.map.fitBounds(L.geoJSON(that.options.geojson).getBounds());
 
-				///that.getRegion('modal_hunt_summary').show(hunt_summary)
+				that.getRegion('modal_hunt_summary').show(hunt_summary)
+				that.getRegion('modal_hunt_title').show(hunt_title_view)
 			})
 		});
-
-		
-			
+	
 			
 		console.log("hunts up %o ", collection)
 
@@ -177,10 +185,13 @@ var HuntItem = Backbone.Marionette.ItemView.extend({
 
 	events:{
 		'click': "showModalHuntSummary"
+
 	},
 
+	
+
 	showModalHuntSummary: function(){
-		
+		console.log("hunt item view %o ", this.model)
 		this.trigger("show:huntsummary", this.model)
 
 	},
@@ -205,27 +216,68 @@ var ModalHunts = Backbone.Marionette.CompositeView.extend({
 	template:hunt_comp_tmpl,
 	childView: HuntItem,
 
-	onShow:function(){
-		console.log("hehe")
-	},
 
 	initialize:function(options){
 		var that = this;
 		this.options = options
 		this.collection = new Backbone.Collection(this.options.collection.models)
-		console.log("hunt item %o ", this.options.collection)
+		
+	} 
+})
+
+var HuntModalTitle = Backbone.Marionette.ItemView.extend({
+	template:hunt_title_tmpl,
+	
+
+	serializeData: function(){
+		
+		return {
+			label:this.model.get("label"),
+			
+		}
+	},
+})
+
+var HuntSummaryItem = Backbone.Marionette.ItemView.extend({
+	template:hunt_summary_tmpl,
+	className:'.hunt-summary-detail',
+	tagName:'tr',
+	serializeData: function(){
+		var properties = this.model.attributes.properties;
+		
+		return {
+			label:this.model.get("label"),
+			value:this.model.get("value")
+
+		}
+	},
+
+	initialize:function(options){
+		this.options = options
+		
+	}
+	
+})
+
+var HuntSummaryView = Backbone.Marionette.CompositeView.extend({
+	template:hunt_summary_comp_tmpl,
+	childView:HuntSummaryItem,
+	tagName:"table",
+	className:"table table-striped",
+
+	initialize:function(options){
+		var that = this;
+		this.options = options
+
+		
+		this.collection = new Backbone.Collection(this.model.attributes.properties)
+
+		
 	
 	} 
 })
 
-var HuntSummaryItem = Backbone.Marionette.ItemView.extend({
 
-})
-
-
-var HuntSummaryView = Backbone.Marionette.CompositeView.extend({
-	childView:HuntSummaryItem
-})
 
 
 var MapView = Marionette.View.extend({

@@ -103,7 +103,7 @@ var MapView = Marionette.View.extend({
 
 	onShow:function(){	
 		var that = this;
-		
+		//this.getDomPoints();
 		that.options.map = L.map('map',{
 			center:[61.15,-149.9],
 			zoom:4,
@@ -134,17 +134,33 @@ var MapView = Marionette.View.extend({
 					lat:lat,
 					lon:lon
 				})
+
 				
 				that.trigger('hunt:summary', that.options.point_model);
 				console.log("lat %o ", lat);
 				console.log("lon %o ", lon);
 				
 			})
+			that.options.map.on('mousemove', function(e){
+				that.startTimer();
+			})	
 
 			log.debug("has it o: ", that.options.map.hasLayer(that.options.wmsLayer))
 			log.debug("map options %o ",that.options)
 	},
 
+	startTimer:function(event){
+		var timer = setTimeout(function(){
+			console.log("clicky poo")
+		},3000)
+			
+	
+
+	},
+
+	getDomPoint:function(){
+
+	},
 	
 
 	initialize:function(options){

@@ -13,7 +13,7 @@ var DrawRateView = require('views/filters/DrawRateView');
 
 module.exports = Backbone.Marionette.LayoutView.extend({
 	template: tmpl,
-	className: '.filters',
+	className: 'filters',
 
 	regions:{
 		species:"#species-container",
@@ -36,8 +36,8 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 			
 		var that = this;
 			$.getJSON(api.filters(), function(filters){
-				that.showSuccesFilter(filters.successrate);
-				that.showDrawRate(filters.drawrate);
+				//that.showSuccesFilter(filters.successrate);
+				//that.showDrawRate(filters.drawrate);
 
 				log.debug("filters %o ", filters.species)
 				var species_filters_view = new SpeciesFiltersView({
