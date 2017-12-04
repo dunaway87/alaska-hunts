@@ -50,7 +50,7 @@ select2-dropdown.select2-dropdown--below {
 }
 .select2-container--default .select2-selection--single {
   height: 37px;
-  width: 200px;
+  width: 250px;
 }
 #successrate-container {
   position: relative;
@@ -138,22 +138,22 @@ select2-dropdown.select2-dropdown--below {
   z-index: 10;
 }
 .modal-title {
-  float: left;
+  right: left;
 }
 .modal-hunts {
+  max-height: 40%;
+  width: 95%;
+  float: left;
+  clear: left;
+  overflow: auto;
+}
+.modal-hunt-summary {
   float: right;
   width: 40%;
   max-height: 100%;
   overflow: auto;
   padding-right: 100px;
   padding-top: 50px;
-}
-.modal-hunt-summary {
-  max-height: 40%;
-  width: 95%;
-  float: left;
-  clear: left;
-  overflow: auto;
 }
 .wrap-map-summary {
   width: 50%;
@@ -165,6 +165,23 @@ select2-dropdown.select2-dropdown--below {
   width: 25%;
   height: 7%;
   float: left;
+}
+#search-hunt-input {
+  width: 168px;
+  height: 28px;
+}
+.search-container {
+  padding-bottom: 20px;
+}
+#hunt-search-submit {
+  width: 28px;
+}
+#search-hunt-btn {
+  cursor: pointer;
+}
+#search-hunt {
+  width: 250px;
+  height: 28px;
 }
 
 /* 
@@ -219,6 +236,7 @@ body {
   margin: 0;
   padding: 0;
   background-attachment: fixed;
+  overflow: auto;
 }
 html,
 body {

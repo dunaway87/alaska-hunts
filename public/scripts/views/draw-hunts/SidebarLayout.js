@@ -9,6 +9,7 @@ var FilterModel	= require("models/FilterModel");
 var SubunitsFilterView = require('views/filters/SubunitsFilterView');
 var SuccessRateView = require('views/filters/SuccessRateView');
 var DrawRateView = require('views/filters/DrawRateView');
+var search_hunt_tmpl = require('draw-hunts/SearchHunt.tmpl');
 
 
 module.exports = Backbone.Marionette.LayoutView.extend({
@@ -21,6 +22,7 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 		subunits:"#subunits-container",
 		successrate:"#successrate-container",
 		drawrate:"#drawrate-container",
+		search_hunt:".search-container"
 	},
 
 
@@ -52,11 +54,21 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 					model: new Backbone.Collection(filters.subunit.range)
 				})
 
+				var search_hunt = new SearchHunt();
 				
-
+				that.getRegion('search_hunt').show(search_hunt);
 				that.getRegion('species').show(species_filters_view);
 				that.getRegion('units').show(units_filter_view);
 				that.getRegion('subunits').show(subunits_filter_view)
+
+				search_hunt.on("search:hunt",function(searchTerm){
+					console.log("search term %o ", searchTerm)
+					var searchCQL="hunt = "+"\'"+searchTerm.toUpperCase()+"\'"
+					that.options.wmsLayer.setParams({
+						CQL_FILTER:searchCQL
+					})	
+				})
+
 
 				var speciesCql= null;
 				var unitsCql = null;
@@ -225,6 +237,42 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 
 	}); 
 
+var SearchHunt = Backbone.Marionette.ItemView.extend({
+	template:search_hunt_tmpl,
+	className:'sidebar-search',
 
+	ui:{
+		"searchKeyword":".search-hunt-input"
+	},
+
+	events:{
+		"click #search-hunt-btn":"getSearchResult",
+		'keyup .search-hunt-input': "keyPress"
+	},
+
+	keyPress:function(e){
+		console.log("keyPress")
+	
+		if(e.which == 13){
+			
+			
+			
+			var searchTerm = this.ui.searchKeyword.val();
+			console.log("search hunt %s ", searchTerm)
+			this.trigger("search:hunt", searchTerm)
+		}	
+			
+	},
+
+	getSearchResult: function(e){
+		e.preventDefault();
+		//e.stopProgation();
+		
+		var searchTerm = this.ui.searchKeyword.val();
+		console.log("search hunt %s ", searchTerm)
+		this.trigger("search:hunt", searchTerm)
+	}
+		
+})
 
 

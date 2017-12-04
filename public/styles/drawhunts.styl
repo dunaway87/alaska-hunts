@@ -73,7 +73,7 @@ select2-dropdown.select2-dropdown--below{
 .select2-container--default .select2-selection--single{
     
     height: 37px;
-    width: 200px; 
+    width: 250px; 
     
     
 }
@@ -191,26 +191,28 @@ select2-dropdown.select2-dropdown--below{
 }
 
 .modal-title{
-	float: left;
+	right: left;
 }
 
 .modal-hunts{
-	float: right;
+  max-height: 40%;
+    width: 95%;
+    float: left;
+    clear: left;
+    overflow:auto;
+
+	 
+
+}
+
+.modal-hunt-summary{
+    float: right;
     width: 40%;
     max-height: 100%;
     overflow:auto;
     padding-right: 100px;
     padding-top: 50px;
-
-}
-
-.modal-hunt-summary{
     
-    max-height: 40%;
-    width: 95%;
-    float: left;
-    clear: left;
-    overflow:auto;
    
 }
 
@@ -227,4 +229,29 @@ select2-dropdown.select2-dropdown--below{
 	width:25%;
 	height:7%;
 	float:left;
+}
+
+#search-hunt-input{
+  width:168px;
+  height:28px;
+
+}
+.search-container{
+  padding-bottom:20px;
+}
+
+#hunt-search-submit{
+  width:28px;
+}
+
+
+
+#search-hunt-btn{
+  cursor:pointer;
+}
+
+ #search-hunt{
+    width: 250px;
+    height:28px;
+
 }
